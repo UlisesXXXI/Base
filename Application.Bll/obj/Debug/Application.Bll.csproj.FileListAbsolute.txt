@@ -1,0 +1,6 @@
+D:\PROYECTOS\ASP\Base\Application.Frontal\Application.Bll\bin\Debug\Application.Bll.dll
+D:\PROYECTOS\ASP\Base\Application.Frontal\Application.Bll\bin\Debug\Application.Bll.pdb
+D:\PROYECTOS\ASP\Base\Application.Frontal\Application.Bll\obj\Debug\Application.Bll.csprojAssemblyReference.cache
+D:\PROYECTOS\ASP\Base\Application.Frontal\Application.Bll\obj\Debug\Application.Bll.csproj.CoreCompileInputs.cache
+D:\PROYECTOS\ASP\Base\Application.Frontal\Application.Bll\obj\Debug\Application.Bll.dll
+D:\PROYECTOS\ASP\Base\Application.Frontal\Application.Bll\obj\Debug\Application.Bll.pdb
