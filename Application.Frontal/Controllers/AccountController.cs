@@ -9,6 +9,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Application.Frontal.Models;
+using Application.bbdd.Entities;
 
 namespace Application.Frontal.Controllers
 {

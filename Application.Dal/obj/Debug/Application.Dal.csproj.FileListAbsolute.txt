@@ -4,3 +4,8 @@ D:\PROYECTOS\ASP\Base\Application.Frontal\Application.Dal\obj\Debug\Application.
 D:\PROYECTOS\ASP\Base\Application.Frontal\Application.Dal\obj\Debug\Application.Dal.csproj.CoreCompileInputs.cache
 D:\PROYECTOS\ASP\Base\Application.Frontal\Application.Dal\obj\Debug\Application.Dal.dll
 D:\PROYECTOS\ASP\Base\Application.Frontal\Application.Dal\obj\Debug\Application.Dal.pdb
+D:\PROYECTOS\ASP\Base\Application.Dal\bin\Debug\Application.Dal.dll
+D:\PROYECTOS\ASP\Base\Application.Dal\bin\Debug\Application.Dal.pdb
+D:\PROYECTOS\ASP\Base\Application.Dal\obj\Debug\Application.Dal.csproj.CoreCompileInputs.cache
+D:\PROYECTOS\ASP\Base\Application.Dal\obj\Debug\Application.Dal.dll
+D:\PROYECTOS\ASP\Base\Application.Dal\obj\Debug\Application.Dal.pdb

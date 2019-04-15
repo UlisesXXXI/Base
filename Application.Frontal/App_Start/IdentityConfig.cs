@@ -11,26 +11,12 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using Application.Frontal.Models;
+using Application.bbdd.Entities;
+using Application.bbdd;
+using Application.services.Comun;
 
 namespace Application.Frontal
 {
-    public class EmailService : IIdentityMessageService
-    {
-        public Task SendAsync(IdentityMessage message)
-        {
-            // Conecte su servicio de correo electrónico aquí para enviar correo electrónico.
-            return Task.FromResult(0);
-        }
-    }
-
-    public class SmsService : IIdentityMessageService
-    {
-        public Task SendAsync(IdentityMessage message)
-        {
-            // Conecte el servicio SMS aquí para enviar un mensaje de texto.
-            return Task.FromResult(0);
-        }
-    }
 
     // Configure el administrador de usuarios de aplicación que se usa en esta aplicación. UserManager se define en ASP.NET Identity y se usa en la aplicación.
     public class ApplicationUserManager : UserManager<ApplicationUser>
