@@ -36,3 +36,6 @@ D:\PROYECTOS\ASP\Base\Application.bbdd\bin\Debug\Microsoft.Owin.Security.Cookies
 D:\PROYECTOS\ASP\Base\Application.bbdd\bin\Debug\Microsoft.Owin.Security.OAuth.xml
 D:\PROYECTOS\ASP\Base\Application.bbdd\bin\Debug\Newtonsoft.Json.xml
 D:\PROYECTOS\ASP\Base\Application.bbdd\bin\Debug\es\Microsoft.AspNet.Identity.Owin.resources.dll
+D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.Migrations.Primera_migracion.resources
+D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.csproj.GenerateResource.cache
+D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.Migrations.SegundaPrimeraMigracion.resources

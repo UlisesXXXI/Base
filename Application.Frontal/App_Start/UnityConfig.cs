@@ -1,6 +1,12 @@
+using Application.bbdd;
+using Application.bbdd.Entities.Maestros;
+using Application.Dal.Implementacion;
+using Application.Dal.Interface;
+using System.Data.Entity;
 using System.Reflection;
 using System.Web.Mvc;
 using Unity;
+using Unity.Lifetime;
 using Unity.Mvc5;
 using Unity.RegistrationByConvention;
 
@@ -26,6 +32,11 @@ namespace Application.Frontal
                 }),
                 WithMappings.FromMatchingInterface,
                 WithName.Default);
+
+            //mantiene la instancia por hilo
+            container.RegisterType<DbContext, ApplicationDbContext>(new PerThreadLifetimeManager());
+
+            container.RegisterType(typeof(IRepositorioGenerico<>), typeof(RepositorioGenerico<>));
 
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }

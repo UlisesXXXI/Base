@@ -144,3 +144,8 @@ D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\Unity.Container.pdb
 D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\Application.services.pdb
 D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\Unity.RegistrationByConvention.pdb
 D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\Unity.Abstractions.pdb
+D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\Application.Bll.dll
+D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\Application.Dal.dll
+D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\Application.Bll.pdb
+D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\Application.Dal.pdb
+D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\Application.Dal.dll.config

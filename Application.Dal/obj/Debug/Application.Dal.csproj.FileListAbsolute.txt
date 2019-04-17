@@ -9,3 +9,12 @@ D:\PROYECTOS\ASP\Base\Application.Dal\bin\Debug\Application.Dal.pdb
 D:\PROYECTOS\ASP\Base\Application.Dal\obj\Debug\Application.Dal.csproj.CoreCompileInputs.cache
 D:\PROYECTOS\ASP\Base\Application.Dal\obj\Debug\Application.Dal.dll
 D:\PROYECTOS\ASP\Base\Application.Dal\obj\Debug\Application.Dal.pdb
+D:\PROYECTOS\ASP\Base\Application.Dal\bin\Debug\Application.Dal.dll.config
+D:\PROYECTOS\ASP\Base\Application.Dal\bin\Debug\EntityFramework.dll
+D:\PROYECTOS\ASP\Base\Application.Dal\bin\Debug\EntityFramework.SqlServer.dll
+D:\PROYECTOS\ASP\Base\Application.Dal\bin\Debug\EntityFramework.xml
+D:\PROYECTOS\ASP\Base\Application.Dal\bin\Debug\EntityFramework.SqlServer.xml
+D:\PROYECTOS\ASP\Base\Application.Dal\bin\Debug\es\EntityFramework.resources.dll
+D:\PROYECTOS\ASP\Base\Application.Dal\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+D:\PROYECTOS\ASP\Base\Application.Dal\obj\Debug\Application.Dal.csprojAssemblyReference.cache
+D:\PROYECTOS\ASP\Base\Application.Dal\obj\Debug\Application.Dal.csproj.CopyComplete

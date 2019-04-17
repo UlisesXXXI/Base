@@ -41,7 +41,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Implementacion\TipoGastoService.cs" />
+    <Compile Include="Interface\ITipoGastoService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Application.bbdd\Application.bbdd.csproj">
+      <Project>{181A159B-EA5E-4613-8A6F-FA21BB54536E}</Project>
+      <Name>Application.bbdd</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Application.Dal\Application.Dal.csproj">
+      <Project>{7F14611C-C8E5-4C96-A01B-C4D13F3B62FD}</Project>
+      <Name>Application.Dal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

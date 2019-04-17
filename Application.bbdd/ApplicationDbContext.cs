@@ -1,4 +1,6 @@
-﻿using Application.bbdd.Entities;
+﻿using Application.bbdd.Configuration;
+using Application.bbdd.Entities;
+using Application.bbdd.Entities.Maestros;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
@@ -11,6 +13,10 @@ namespace Application.bbdd
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        #region DbSet's
+        public TipoGasto TiposGasto { get; set; }
+        #endregion
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
@@ -24,6 +30,14 @@ namespace Application.bbdd
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            ConfigurationEntities(modelBuilder);
+
+        }
+
+
+        protected void ConfigurationEntities(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(new TipoGastoEntityConfiguration());
         }
     }
 }

@@ -284,3 +284,8 @@ D:\PROYECTOS\ASP\Base\Application.Frontal\bin\es\Microsoft.AspNet.Identity.Core.
 D:\PROYECTOS\ASP\Base\Application.Frontal\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
 D:\PROYECTOS\ASP\Base\Application.Frontal\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
 D:\PROYECTOS\ASP\Base\Application.Frontal\obj\Debug\Application.Frontal.csproj.CopyComplete
+D:\PROYECTOS\ASP\Base\Application.Frontal\bin\Application.Bll.dll
+D:\PROYECTOS\ASP\Base\Application.Frontal\bin\Application.Dal.dll
+D:\PROYECTOS\ASP\Base\Application.Frontal\bin\Application.Bll.pdb
+D:\PROYECTOS\ASP\Base\Application.Frontal\bin\Application.Dal.pdb
+D:\PROYECTOS\ASP\Base\Application.Frontal\bin\Application.Dal.dll.config

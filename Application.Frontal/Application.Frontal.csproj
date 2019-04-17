@@ -225,6 +225,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\TipoGastoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -249,6 +250,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\App\App.js" />
+    <Content Include="Scripts\App\html\aviso.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -299,6 +302,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\TipoGasto\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -320,6 +324,14 @@
     <ProjectReference Include="..\Application.bbdd\Application.bbdd.csproj">
       <Project>{181A159B-EA5E-4613-8A6F-FA21BB54536E}</Project>
       <Name>Application.bbdd</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Application.Bll\Application.Bll.csproj">
+      <Project>{EA34011A-743D-4D10-A468-6C30713B393E}</Project>
+      <Name>Application.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Application.Dal\Application.Dal.csproj">
+      <Project>{7F14611C-C8E5-4C96-A01B-C4D13F3B62FD}</Project>
+      <Name>Application.Dal</Name>
     </ProjectReference>
     <ProjectReference Include="..\Application.services\Application.services.csproj">
       <Project>{a436e009-cf83-43c6-974d-a35aba2d8dbe}</Project>
