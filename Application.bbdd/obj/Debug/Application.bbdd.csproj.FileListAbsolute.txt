@@ -17,7 +17,6 @@ D:\PROYECTOS\ASP\Base\Application.bbdd\bin\Debug\Microsoft.AspNet.Identity.Core.
 D:\PROYECTOS\ASP\Base\Application.bbdd\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 D:\PROYECTOS\ASP\Base\Application.bbdd\bin\Debug\es\Microsoft.AspNet.Identity.Core.resources.dll
 D:\PROYECTOS\ASP\Base\Application.bbdd\bin\Debug\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
-D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.csprojAssemblyReference.cache
 D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.csproj.CoreCompileInputs.cache
 D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.csproj.CopyComplete
 D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.dll
@@ -39,3 +38,5 @@ D:\PROYECTOS\ASP\Base\Application.bbdd\bin\Debug\es\Microsoft.AspNet.Identity.Ow
 D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.Migrations.Primera_migracion.resources
 D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.csproj.GenerateResource.cache
 D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.Migrations.SegundaPrimeraMigracion.resources
+D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.Migrations.CustomRoles.resources
+D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.csprojAssemblyReference.cache

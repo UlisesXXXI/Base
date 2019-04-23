@@ -8,8 +8,20 @@ namespace Application.Frontal
         // Para obtener más información sobre las uniones, visite https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
+
+            #region Css
+            bundles.Add(new StyleBundle("~/Content/css").Include(
+                     "~/Content/bootstrap.css",
+                     "~/Content/site.css"));
+
+            //Datatable Css
+            bundles.Add(new StyleBundle("~/Content/datatables")
+                                .Include("~/Scripts/datatables.min.css"));
+            #endregion
+
+            #region JS
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                       "~/Scripts/jquery-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -22,9 +34,20 @@ namespace Application.Frontal
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+            //Datatable
+            bundles.Add(new ScriptBundle("~/bundles/datatables")
+                            .Include("~/Scripts/datatables.min.js"));
+            #endregion
+
+
+            #region App Files
+            bundles.Add(new ScriptBundle("~/bundles/App")
+                            .Include("~/Scripts/App/App.js"));
+            #endregion
+
+
+
+
         }
     }
 }

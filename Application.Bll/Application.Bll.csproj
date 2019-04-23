@@ -41,8 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Implementacion\RoleService.cs" />
     <Compile Include="Implementacion\TipoGastoService.cs" />
+    <Compile Include="Implementacion\UsuarioService.cs" />
+    <Compile Include="Interface\IRoleService.cs" />
     <Compile Include="Interface\ITipoGastoService.cs" />
+    <Compile Include="Interface\IUsuarioService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

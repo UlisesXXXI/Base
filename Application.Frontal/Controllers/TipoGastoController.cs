@@ -76,11 +76,6 @@ namespace Application.Frontal.Controllers
             }
         }
 
-        // GET: TipoGasto/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
 
         // POST: TipoGasto/Delete/5
         [HttpPost]

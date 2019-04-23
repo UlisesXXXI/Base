@@ -11,14 +11,15 @@ using System.Threading.Tasks;
 
 namespace Application.bbdd
 {
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser,ApplicationRole,string,IdentityUserLogin,IdentityUserRole,IdentityUserClaim>
     {
         #region DbSet's
         public TipoGasto TiposGasto { get; set; }
         #endregion
 
+       
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("DefaultConnection")
         {
         }
 

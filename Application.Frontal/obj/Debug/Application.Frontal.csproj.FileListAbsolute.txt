@@ -289,3 +289,12 @@ D:\PROYECTOS\ASP\Base\Application.Frontal\bin\Application.Dal.dll
 D:\PROYECTOS\ASP\Base\Application.Frontal\bin\Application.Bll.pdb
 D:\PROYECTOS\ASP\Base\Application.Frontal\bin\Application.Dal.pdb
 D:\PROYECTOS\ASP\Base\Application.Frontal\bin\Application.Dal.dll.config
+D:\PROYECTOS\ASP\Base\Application.Frontal\bin\AutoMapper.dll
+D:\PROYECTOS\ASP\Base\Application.Frontal\bin\MvcExtensions.AutoMapper.dll
+D:\PROYECTOS\ASP\Base\Application.Frontal\bin\MvcExtensions.dll
+D:\PROYECTOS\ASP\Base\Application.Frontal\bin\System.ValueTuple.dll
+D:\PROYECTOS\ASP\Base\Application.Frontal\bin\AutoMapper.pdb
+D:\PROYECTOS\ASP\Base\Application.Frontal\bin\AutoMapper.xml
+D:\PROYECTOS\ASP\Base\Application.Frontal\bin\MvcExtensions.pdb
+D:\PROYECTOS\ASP\Base\Application.Frontal\bin\MvcExtensions.xml
+D:\PROYECTOS\ASP\Base\Application.Frontal\bin\System.ValueTuple.xml

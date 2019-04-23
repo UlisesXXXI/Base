@@ -77,6 +77,7 @@
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
     <Compile Include="Configuration\TipoGastoEntityConfiguration.cs" />
+    <Compile Include="Entities\ApplicationRole.cs" />
     <Compile Include="Entities\ApplicationUser.cs" />
     <Compile Include="Entities\Maestros\TipoGasto.cs" />
     <Compile Include="Migrations\201904161711406_Primera_migracion.cs" />
@@ -86,6 +87,10 @@
     <Compile Include="Migrations\201904161803507_SegundaPrimeraMigracion.cs" />
     <Compile Include="Migrations\201904161803507_SegundaPrimeraMigracion.Designer.cs">
       <DependentUpon>201904161803507_SegundaPrimeraMigracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904211206561_CustomRoles.cs" />
+    <Compile Include="Migrations\201904211206561_CustomRoles.Designer.cs">
+      <DependentUpon>201904211206561_CustomRoles.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -100,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904161803507_SegundaPrimeraMigracion.resx">
       <DependentUpon>201904161803507_SegundaPrimeraMigracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904211206561_CustomRoles.resx">
+      <DependentUpon>201904211206561_CustomRoles.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

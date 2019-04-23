@@ -19,14 +19,11 @@ namespace Application.Frontal.Controllers
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
+
         public AccountController()
         {
-        }
-
-        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
-        {
-            UserManager = userManager;
-            SignInManager = signInManager;
+            
+           
         }
 
         public ApplicationSignInManager SignInManager
@@ -45,7 +42,7 @@ namespace Application.Frontal.Controllers
         {
             get
             {
-                return _userManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
+                return _userManager ?? HttpContext.GetOwinContext().Get<ApplicationUserManager>();
             }
             private set
             {

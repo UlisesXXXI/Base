@@ -149,3 +149,8 @@ D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\Application.Dal.dll
 D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\Application.Bll.pdb
 D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\Application.Dal.pdb
 D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\Application.Dal.dll.config
+D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\AutoMapper.dll
+D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\System.ValueTuple.dll
+D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\AutoMapper.pdb
+D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\AutoMapper.xml
+D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\System.ValueTuple.xml
