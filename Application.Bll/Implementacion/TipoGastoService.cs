@@ -9,49 +9,20 @@ using System.Threading.Tasks;
 
 namespace Application.Bll.Implementacion
 {
-    public class TipoGastoService : ITipoGastoService
+    public class TipoGastoService : ServicioBase<TipoGasto> ,ITipoGastoService
     {
-        #region Campos Privados
-        private IRepositorioGenerico<TipoGasto> _repositorio;
-        #endregion
 
-
-        #region Constructor
-        public TipoGastoService(IRepositorioGenerico<TipoGasto> repositorio)
+        public TipoGastoService(ITipoGastoRepositorio _repositorio):base(_repositorio)
         {
-            _repositorio = repositorio;
+
         }
-        #endregion
-
-
-        public void Delete(object[] Id)
+        public TipoGasto MetodoEspecificoIntefaz()
         {
-            _repositorio.Delete(Id);
+            return new TipoGasto();
         }
 
-        public TipoGasto Find(object[] Id)
-        {
-            return _repositorio.Find(Id);
-        }
+       
 
-        public IList<TipoGasto> Get(Func<TipoGasto, bool> where)
-        {
-            return _repositorio.Get(where);
-        }
-
-        public IList<TipoGasto> GetAll()
-        {
-            return _repositorio.GetAll();
-        }
-
-        public TipoGasto Save(TipoGasto entity)
-        {
-            return _repositorio.Save(entity);
-        }
-
-        public TipoGasto Update(TipoGasto entity)
-        {
-            return _repositorio.Update(entity);
-        }
+        
     }
 }

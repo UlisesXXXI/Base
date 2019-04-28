@@ -18,3 +18,12 @@ D:\PROYECTOS\ASP\Base\Application.Dal\bin\Debug\es\EntityFramework.resources.dll
 D:\PROYECTOS\ASP\Base\Application.Dal\bin\Debug\es\EntityFramework.SqlServer.resources.dll
 D:\PROYECTOS\ASP\Base\Application.Dal\obj\Debug\Application.Dal.csproj.CopyComplete
 D:\PROYECTOS\ASP\Base\Application.Dal\obj\Debug\Application.Dal.csprojAssemblyReference.cache
+D:\PROYECTOS\ASP\Base\Application.Dal\bin\Debug\Application.bbdd.dll
+D:\PROYECTOS\ASP\Base\Application.Dal\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\PROYECTOS\ASP\Base\Application.Dal\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\PROYECTOS\ASP\Base\Application.Dal\bin\Debug\Application.bbdd.pdb
+D:\PROYECTOS\ASP\Base\Application.Dal\bin\Debug\Application.bbdd.dll.config
+D:\PROYECTOS\ASP\Base\Application.Dal\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\PROYECTOS\ASP\Base\Application.Dal\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\PROYECTOS\ASP\Base\Application.Dal\bin\Debug\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+D:\PROYECTOS\ASP\Base\Application.Dal\bin\Debug\es\Microsoft.AspNet.Identity.Core.resources.dll

@@ -1,14 +1,16 @@
-﻿using Application.Dal.Interface;
+﻿using Application.bbdd.Entities;
+using Application.Dal.Interface;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Application.Dal.Implementacion
 {
-    public class RepositorioGenerico<T> : IRepositorioGenerico<T> where T:class
+    public abstract class RepositorioGenerico<T> : IRepositorioGenerico<T> where T:class
     {
         private DbContext _ctx;
 
@@ -17,41 +19,66 @@ namespace Application.Dal.Implementacion
             _ctx = ctx;
         }
 
-        public void Delete(object[] Id)
+        public void Eliminar(object[] Id)
         {
-            var entity = Find(Id);
-            _ctx.Entry(entity).State = EntityState.Deleted;
+            var entidad = Buscar(Id);
+            _ctx.Entry(entidad).State = EntityState.Deleted;
             _ctx.SaveChanges();
             
         }
 
-        public T Find(object[] Id)
+        public IList<T> Obtener(Expression<Func<T, bool>> expresion)
         {
-           return  _ctx.Set<T>().Find(Id);
+            return _ctx.Set<T>().Where(expresion).ToList();
         }
 
-        public IList<T> Get(Func<T, bool> where)
+    
+        public DbSet<T> IncluirPropiedades(Expression<Func<T, bool>>[] propiedades)
         {
-            return _ctx.Set<T>().Where(where).ToList();
+            DbSet<T> query =  _ctx.Set<T>();
+            foreach(var w in propiedades)
+            {
+                query.Include(w);
+            }
+            return query;
         }
 
-        public IList<T> GetAll()
+        public T Insertar(T entidad)
+        {
+            _ctx.Entry(entidad).State = EntityState.Added;
+            _ctx.SaveChanges();
+            return entidad;
+        }
+
+        public T Actualizar(T entidad)
+        {
+            _ctx.Entry(entidad).State = EntityState.Modified;
+            _ctx.SaveChanges();
+            return entidad;
+        }
+
+        public T Buscar(params object[] Id)
+        {
+            return _ctx.Set<T>().Find(Id);
+        }
+
+        public T BuscarConPropiedades(object[] Id, params Expression<Func<T, bool>>[] propiedades)
+        {
+            var qry = IncluirPropiedades(propiedades);
+
+            return qry.Find(Id);
+        }
+
+        public IList<T> ObtenerTodas()
         {
             return _ctx.Set<T>().ToList();
         }
 
-        public T Save(T entity)
+        public IList<T> ObtenerConPropiedades(Expression<Func<T, bool>> expresion, params Expression<Func<T, bool>>[] propiedades)
         {
-            _ctx.Entry(entity).State = EntityState.Added;
-            _ctx.SaveChanges();
-            return entity;
+            var consulta = IncluirPropiedades(propiedades);
+            return consulta.Where(expresion).ToList();
         }
 
-        public T Update(T entity)
-        {
-            _ctx.Entry(entity).State = EntityState.Modified;
-            _ctx.SaveChanges();
-            return entity;
-        }
     }
 }

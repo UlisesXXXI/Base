@@ -22,7 +22,7 @@ namespace Application.Frontal.Controllers
         // GET: TipoGasto
         public ActionResult Index()
         {
-            var listado = _tipoGastoservice.GetAll();
+            var listado = _tipoGastoservice.ObtenerTodos();
             return View(listado);
         }
 

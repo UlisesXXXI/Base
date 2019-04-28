@@ -3,6 +3,7 @@ using Application.Bll.Interface;
 using Application.Dal.Interface;
 using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 
 namespace Application.Bll.Implementacion
 {
@@ -22,17 +23,22 @@ namespace Application.Bll.Implementacion
 
         public ApplicationRole Find(object[] Id)
         {
-            return _repository.Find(Id);
+            return _repository.Buscar(Id);
+        }
+
+        public IList<ApplicationRole> Get(Expression<Func<ApplicationRole, bool>> where)
+        {
+            return _repository.Obtener(where);
         }
 
         public IList<ApplicationRole> Get(Func<ApplicationRole, bool> where)
         {
-            return _repository.Get(where);
+            throw new NotImplementedException();
         }
 
         public IList<ApplicationRole> GetAll()
         {
-            return _repository.GetAll();
+            return _repository.ObtenerTodas();
         }
     }
 }

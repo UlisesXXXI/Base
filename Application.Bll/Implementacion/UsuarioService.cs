@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using Application.bbdd.Entities;
 using Application.Bll.Interface;
 using Application.Dal.Interface;
@@ -20,17 +21,17 @@ namespace Application.Bll.Implementacion
         #region Public methods
         public ApplicationUser Find(object[] Id)
         {
-            return _repository.Find(Id);
+            return _repository.Buscar(Id);
         }
 
-        public IList<ApplicationUser> Get(Func<ApplicationUser, bool> where)
+        public IList<ApplicationUser> Get(Expression<Func<ApplicationUser, bool>> where)
         {
-            return _repository.Get(where);
+            return _repository.Obtener(where);
         }
 
         public IList<ApplicationUser> GetAll()
         {
-            return _repository.GetAll();
+            return _repository.ObtenerTodas();
         }
         #endregion
 

@@ -49,11 +49,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GenericRepository.cs" />
+    <Compile Include="Implementacion\TipoGastoRepositorio.cs" />
     <Compile Include="Interface\IRepositorioGenerico.cs" />
     <Compile Include="Implementacion\RepositorioGenerico.cs" />
+    <Compile Include="Interface\ITipoGastoRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Application.bbdd\Application.bbdd.csproj">
+      <Project>{181A159B-EA5E-4613-8A6F-FA21BB54536E}</Project>
+      <Name>Application.bbdd</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
