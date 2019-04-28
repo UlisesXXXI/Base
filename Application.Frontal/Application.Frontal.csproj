@@ -259,14 +259,18 @@
     <Compile Include="ViewModel\Login\ManageLoginsViewModel.cs" />
     <Compile Include="ViewModel\Login\SetPasswordViewModel.cs" />
     <Compile Include="ViewModel\Login\VerifyPhoneNumberViewModel.cs" />
+    <Compile Include="ViewModel\TipoGasto\TipoGastoViewModel.cs" />
     <Compile Include="ViewModel\Users\UserViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="asserts\logo-and-text.png" />
+    <Content Include="asserts\logo-texto.png" />
     <Content Include="asserts\seahorse-fiji-dark.png" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\theme.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -284,6 +288,7 @@
     <Content Include="Areas\Admin\Views\Users\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\User\_UsersTable.cshtml" />
     <Content Include="Areas\Admin\Views\Users\Edit.cshtml" />
+    <Content Include="Scripts\App\App.tipogasto.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\DataTables-1.10.18\css\dataTables.bootstrap.css" />
     <Content Include="Scripts\DataTables-1.10.18\css\dataTables.bootstrap.min.css" />
@@ -363,6 +368,8 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\TipoGasto\Index.cshtml" />
+    <Content Include="Views\Shared\TipoGasto\_TipoGastoTabla.cshtml" />
+    <Content Include="Views\Shared\TipoGasto\_TipogGastoModal.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -110,7 +110,7 @@
     application.Spinner = {
         element: 'c9221cec-e496-4546-a356-55c1a770d477',
         template: `
-                                        <div id="{{element_id}}" style="width: 100%;height: 100%; background-color:black;position: absolute; z-index: 9999998; opacity: 0.4; top: 0px; left: 0px; display: none" >
+                                        <div  style="width: 100%;height: 100%; background-color:black;position: absolute; z-index: 9999998; opacity: 0.4; top: 0px; left: 0px; display: none" >
                                             <div class="sk-cube-grid" style="top: 30%; position: absolute; left: 50%; z-index: 9999999; opacity: 1.0;" >
                                                 <div class="sk-cube sk-cube1" style="background: red"></div>
                                                 <div class="sk-cube sk-cube2" style="background: rgb(92, 92, 131)"></div>
@@ -124,9 +124,12 @@
                                             </div>
                                         </div>`,
         Start: function () {
-            var bodytemplate = this.template.replace('{{element_id}}', this.element);
+            var cont = document.createElement("div");
+            cont.id = this.element;
+            var bodytemplate = this.template
+            cont.innerHTML = cont;
             var body = document.getElementsByTagName('body');
-            body[0].innerHTML = bodytemplate;
+            body[0].appendChild(  cont);
             $("#" + this.element).fadeIn();
 
         },
@@ -141,10 +144,17 @@
 
 
 
-
-
     
+    $(document).ajaxStart(function () {
+        App.Spinner.Start();
+    });
+
+    $(document).ajaxStop(function () {
+        App.Spinner.Stop();
+    });
+
 
     return application;
 
 })();
+

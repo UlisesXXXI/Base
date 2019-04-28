@@ -1,4 +1,6 @@
-﻿using Application.Bll.Interface;
+﻿using Application.bbdd.Entities.Maestros;
+using Application.Bll.Interface;
+using Application.Frontal.ViewModel.TipoGasto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +24,10 @@ namespace Application.Frontal.Controllers
         // GET: TipoGasto
         public ActionResult Index()
         {
-            var listado = _tipoGastoservice.ObtenerTodos();
+            List<TipoGasto> tiposGasto = (List<TipoGasto>)_tipoGastoservice.ObtenerTodos();
+            var listado = AutoMapper.Mapper.Map< List<TipoGasto>,List <TipoGastoViewModel>>(tiposGasto);
+
+            
             return View(listado);
         }
 
@@ -52,6 +57,11 @@ namespace Application.Frontal.Controllers
             {
                 return View();
             }
+        }
+
+        public PartialViewResult NuevoTipo()
+        {
+            return PartialView("TipoGasto/_TipogGastoModal", new TipoGastoViewModel());
         }
 
         // GET: TipoGasto/Edit/5
@@ -91,6 +101,13 @@ namespace Application.Frontal.Controllers
             {
                 return View();
             }
+        }
+        
+        public JsonResult ActualizarTablaTiposGasto()
+        {
+            List<TipoGasto> tiposDeGasto = (List<TipoGasto>)_tipoGastoservice.ObtenerTodos();
+            
+            return Json(new { data =tiposDeGasto },JsonRequestBehavior.AllowGet);
         }
     }
 }

@@ -12,6 +12,7 @@ namespace Application.Frontal
             #region Css
             bundles.Add(new StyleBundle("~/Content/css").Include(
                      "~/Content/bootstrap.css",
+                     "~/Content/theme.css",
                      "~/Content/site.css"));
 
             //Datatable Css

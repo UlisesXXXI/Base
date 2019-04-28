@@ -7,27 +7,41 @@
     <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/datatables")
 
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+        <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"><img class="img-responsive" src="~/asserts/seahorse-fiji-dark.png" id="logo" alt="logo-page" width="40%" /></span>
+                    <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <div>
-                    @*<img class="img-responsive" src="~/asserts/seahorse-fiji-dark.png" id="logo" alt="logo-page" width="40%" />*@
-                    @Html.ActionLink("Nombre de aplicación", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                </div>
-               
+
+
+                <a href=@Url.Action("Index","Home") class="navbar-left" style="padding:0px">
+                    <img class="img-rounded" src="~/asserts/logo-and-text.png" id="logo" alt="logo-page" style="width:50%; padding:5px" />
+
+                </a>
+
+
+
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Maestros
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="@Url.Action("Index","TipoGasto")">TipoGasto</a></li>
+
+                        </ul>
+                    </li>
                     <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
@@ -44,6 +58,9 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/App")
+    @Scripts.Render("~/bundles/datatables")
+
     @RenderSection("scripts", required: false)
 </body>
 </html>
