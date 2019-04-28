@@ -44,7 +44,29 @@ App.tipogasto = {
 
         });
 
-    }
+    },
+
+    GuardarCambios :function () {
+
+        
+
+        $.ajax({
+            url: "TipoGasto/Insert",
+            type: "Post",
+            data: $("#formtipogasto").serialize(),
+            dataType: "application/json",
+            
+            success: function (response) {
+                App.tipogasto.ActualizarTabla("tablatiposdegasto");
+                $("#modaltipogasto").remove();
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                alert("Status: " + textStatus); alert("Error: " + errorThrown);
+            }
+        });
+      }
+
+
 
 };
 

@@ -109,5 +109,15 @@ namespace Application.Frontal.Controllers
             
             return Json(new { data =tiposDeGasto },JsonRequestBehavior.AllowGet);
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public JsonResult Insert(TipoGastoViewModel vm)
+        {
+            TipoGasto entidad = AutoMapper.Mapper.Map<TipoGastoViewModel,TipoGasto>(vm);
+            _tipoGastoservice.Insertar(entidad);
+            return Json("Ok");
+
+        }
     }
 }

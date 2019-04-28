@@ -10,7 +10,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                @using (Html.BeginForm())
+                @using (Html.BeginForm("Insertar", "TipoGasto", FormMethod.Post, new { id = "formtipogasto" }))
                 {
                     @Html.AntiForgeryToken()
 
@@ -19,10 +19,10 @@
                         <hr />
                         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                         <div class="form-group">
-                            
-                                @Html.HiddenFor(model => model.TipoGastoID )
-                                
-                            
+
+                            @Html.HiddenFor(model => model.TipoGastoID)
+
+
                         </div>
 
                         <div class="form-group">
@@ -34,10 +34,10 @@
                         </div>
 
                         @*<div class="form-group">
-                            <div class="col-md-offset-2 col-md-10">
-                                <input type="submit" value="Save" class="btn btn-default" />
-                            </div>
-                        </div>*@
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Save" class="btn btn-default" />
+                                </div>
+                            </div>*@
                     </div>
                 }
 
@@ -48,9 +48,16 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="submit" class="btn btn-primary" onclick="App.tipogasto.GuardarCambios()">Save changes</button>
             </div>
         </div>
     </div>
 </div>
+
+
+@section scripts{
+
+  
+}
+
 
