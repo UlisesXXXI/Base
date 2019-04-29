@@ -21,8 +21,15 @@ namespace Application.Bll.Implementacion
             return new TipoGasto();
         }
 
-       
+        public override void AntesDeInsertar(ref TipoGasto entidad)
+        {
+            base.AntesDeInsertar(ref entidad);
+            TodoAMayusculas(ref entidad);
+        }
 
-        
+        private void TodoAMayusculas(ref TipoGasto entidad)
+        {
+            entidad.Descripcion = entidad.Descripcion.ToUpper();
+        }
     }
 }

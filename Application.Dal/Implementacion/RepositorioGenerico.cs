@@ -45,13 +45,15 @@ namespace Application.Dal.Implementacion
 
         public T Insertar(T entidad)
         {
-            _ctx.Entry(entidad).State = EntityState.Added;
+            _ctx.Set<T>().Add(entidad);
+            
             _ctx.SaveChanges();
             return entidad;
         }
 
         public T Actualizar(T entidad)
         {
+            _ctx.Set<T>().Add(entidad);
             _ctx.Entry(entidad).State = EntityState.Modified;
             _ctx.SaveChanges();
             return entidad;

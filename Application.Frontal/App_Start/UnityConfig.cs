@@ -34,7 +34,8 @@ namespace Application.Frontal
                 WithName.Default);
 
             //mantiene la instancia por hilo
-            container.RegisterType<DbContext, ApplicationDbContext>(new PerThreadLifetimeManager());
+            //container.RegisterType<DbContext, ApplicationDbContext>(new PerThreadLifetimeManager());
+            container.RegisterType<DbContext, ApplicationDbContext>();
 
             container.RegisterType(typeof(IRepositorioGenerico<>), typeof(RepositorioGenerico<>));
 

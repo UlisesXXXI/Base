@@ -10,7 +10,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                @using (Html.BeginForm("Insertar", "TipoGasto", FormMethod.Post, new { id = "formtipogasto" }))
+                @using (Html.BeginForm(Model.RegistroNuevo ? "Insertar" : "Edit", "TipoGasto", FormMethod.Post, new { id = "formtipogasto" }))
                 {
                     @Html.AntiForgeryToken()
 
@@ -48,7 +48,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary" onclick="App.tipogasto.GuardarCambios()">Save changes</button>
+                <button type="submit" class="btn btn-primary" onclick="App.tipogasto.GuardarCambios(@Model.RegistroNuevo.ToString().ToLower())">Save changes</button>
             </div>
         </div>
     </div>

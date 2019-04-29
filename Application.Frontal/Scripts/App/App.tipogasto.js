@@ -5,23 +5,34 @@ App.tipogasto = {
     CargarDatatable: function (dataTableName) {
         var datatable = $("#" + dataTableName);
         var urlajax = datatable.attr["data-ajax"];
-        $("#" + dataTableName).dataTable({
+        $("#" + dataTableName).DataTable({
             "ajax": urlajax,
-            dataSrc:'',
+            dataSrc: '',
+            select: true,
+            buttons: [
+                'colvis',
+                'excel',
+                'print'
+            ],
             columns: [
                 { data: 'TipoGastoID' },
                 { data:'Descripcion'}
             ]
         });
+        $('#tablatiposdegasto tbody').on('click', 'tr', function () {
+            var data = $('#tablatiposdegasto').DataTable().row(this).data();
+            App.tipogasto.nuevoTipo(data.TipoGastoID);
+        });
+
     },
 
     ActualizarTabla: function (dataTableName) {
-
-        $("#" + dataTableName).ajax.reload();
+        $("#" + dataTableName).DataTable().ajax.reload();
+       
     },
 
-    nuevoTipo: function(){
-
+    nuevoTipo: function(id){
+        if (id == undefined) id = 0;
         var containerPopUp = document.createElement("div");
         containerPopUp.id = "container-tipogasto-popup";
         var bdy = document.getElementsByTagName("body");
@@ -31,11 +42,16 @@ App.tipogasto = {
         $.ajax({
             url: "/TipoGasto/NuevoTipo",
             type: "POST",
+            data: { "id": id },
             success: function (response) {
                 containerPopUp.innerHTML = response;
 
                 var mdl = $("#modaltipogasto");
-                mdl.modal({ "show":'true'})
+                mdl.on('hidden.bs.modal', App.tipogasto.eliminarModal);
+                
+                mdl.modal({ "show": 'true' })
+                
+    
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
                 alert("Status: " + textStatus); alert("Error: " + errorThrown);
@@ -45,20 +61,26 @@ App.tipogasto = {
         });
 
     },
+    eliminarModal: function () {
+        $("#modaltipogasto").remove();
+    },
+    GuardarCambios: function (nuevo) {
 
-    GuardarCambios :function () {
-
-        
+        url = (nuevo) ? "TipoGasto/Insert" : "TipoGasto/Edit";
 
         $.ajax({
-            url: "TipoGasto/Insert",
+            url: url,
             type: "Post",
             data: $("#formtipogasto").serialize(),
-            dataType: "application/json",
+            
             
             success: function (response) {
+                var mdl = $("#modaltipogasto");
+                mdl.modal("hide");
+                App.tipogasto.eliminarModal();
                 App.tipogasto.ActualizarTabla("tablatiposdegasto");
-                $("#modaltipogasto").remove();
+                
+                
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
                 alert("Status: " + textStatus); alert("Error: " + errorThrown);

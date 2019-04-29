@@ -59,9 +59,20 @@ namespace Application.Frontal.Controllers
             }
         }
 
-        public PartialViewResult NuevoTipo()
+        public PartialViewResult NuevoTipo(int id)
         {
-            return PartialView("TipoGasto/_TipogGastoModal", new TipoGastoViewModel());
+            var vm = new TipoGastoViewModel();
+            if(id != 0)
+            {
+                vm = AutoMapper.Mapper.Map<TipoGasto,TipoGastoViewModel>( _tipoGastoservice.Obtener(id));
+                if(vm==null || vm.TipoGastoID==0)
+                {
+                    throw new Exception("No se encontro el registro");
+                }
+            }
+
+            
+            return PartialView("TipoGasto/_TipogGastoModal", vm);
         }
 
         // GET: TipoGasto/Edit/5
@@ -72,18 +83,10 @@ namespace Application.Frontal.Controllers
 
         // POST: TipoGasto/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public JsonResult Edit(TipoGastoViewModel vm)
         {
-            try
-            {
-                // TODO: Add update logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            _tipoGastoservice.Modificar(AutoMapper.Mapper.Map<TipoGastoViewModel,TipoGasto>( vm));
+            return Json("OK");
         }
 
 
