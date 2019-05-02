@@ -92,18 +92,10 @@ namespace Application.Frontal.Controllers
 
         // POST: TipoGasto/Delete/5
         [HttpPost]
-        public ActionResult Delete(int id)
+        public JsonResult Eliminar(int id)
         {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            _tipoGastoservice.Eliminar(id);
+            return Json("Ok");
         }
         
         public JsonResult ActualizarTablaTiposGasto()

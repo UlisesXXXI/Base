@@ -9,20 +9,28 @@ App.tipogasto = {
             "ajax": urlajax,
             dataSrc: '',
             select: true,
-            buttons: [
-                'colvis',
-                'excel',
-                'print'
-            ],
             columns: [
                 { data: 'TipoGastoID' },
-                { data:'Descripcion'}
+                { data: 'Descripcion' },
+               
+                {
+                    sortable: false,
+                    "render": function (data, type, full, meta) {
+                        var buttonID = full.tipogasto;
+                        return "<a class= 'btn btn-danger glyphicon glyphicon-remove' role='button' onclick='App.tipogasto.eliminarTipo(" + full.TipoGastoID + ")'></a>" +
+                            "<a class= 'btn btn-success glyphicon glyphicon-edit' role='button' onclick='App.tipogasto.nuevoTipo(" + full.TipoGastoID + ")'></a>";
+                                
+
+
+                            
+                    }
+                },
             ]
         });
-        $('#tablatiposdegasto tbody').on('click', 'tr', function () {
-            var data = $('#tablatiposdegasto').DataTable().row(this).data();
-            App.tipogasto.nuevoTipo(data.TipoGastoID);
-        });
+        //$('#tablatiposdegasto tbody').on('click', 'tr', function () {
+        //    var data = $('#tablatiposdegasto').DataTable().row(this).data();
+        //    App.tipogasto.nuevoTipo(data.TipoGastoID);
+        //});
 
     },
 
@@ -30,7 +38,6 @@ App.tipogasto = {
         $("#" + dataTableName).DataTable().ajax.reload();
        
     },
-
     nuevoTipo: function(id){
         if (id == undefined) id = 0;
         var containerPopUp = document.createElement("div");
@@ -61,6 +68,44 @@ App.tipogasto = {
         });
 
     },
+    eliminarTipo: function (id) {
+        App.Aviso.Open({
+            title: 'Confirmación',
+            msg: '¿Estas seguro de eliminar?',
+            okText: 'Sí',
+            cancelText: 'No',
+            showBtnCancel: true,
+            okCallback: [function (param)
+            {
+                                       
+
+                                        $.ajax({
+                                            url: "/TipoGasto/Eliminar",
+                                            type: "POST",
+                                            data: { "id": param.id },
+                                            success: function (response) {
+                                                this.id;
+                                                var mdl = $("#modaltipogasto");
+                                                mdl.modal("hide");
+                                                App.tipogasto.eliminarModal();
+                                                App.tipogasto.ActualizarTabla("tablatiposdegasto");
+                                            },
+                                            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                                                alert("Status: " + textStatus); alert("Error: " + errorThrown);
+                                            }
+
+
+                                        });
+
+                                     },
+                {"id":id}
+                            ]
+             });
+        
+
+       
+
+    },
     eliminarModal: function () {
         $("#modaltipogasto").remove();
     },
@@ -86,9 +131,22 @@ App.tipogasto = {
                 alert("Status: " + textStatus); alert("Error: " + errorThrown);
             }
         });
-      }
+      },
 
-
+    AjaxEliminarTipoGasto :function (id) {
+        $.ajax({
+            url: 'TipoGasto/Insert',
+            type: "Post",
+            data: {id:id},
+            success: function (response) {
+               
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                alert("Status: " + textStatus); alert("Error: " + errorThrown);
+            }
+        });
+    }
+    
 
 };
 

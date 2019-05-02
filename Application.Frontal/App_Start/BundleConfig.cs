@@ -13,7 +13,8 @@ namespace Application.Frontal
             bundles.Add(new StyleBundle("~/Content/css").Include(
                      "~/Content/bootstrap.css",
                      "~/Content/theme.css",
-                     "~/Content/site.css"));
+                     "~/Content/site.css",
+                     "~/Content/spin.css"));
 
             //Datatable Css
             bundles.Add(new StyleBundle("~/Content/datatables")
