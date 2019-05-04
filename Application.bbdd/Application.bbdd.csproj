@@ -76,9 +76,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
+    <Compile Include="Configuration\GastoEntityConfiguration.cs" />
     <Compile Include="Configuration\TipoGastoEntityConfiguration.cs" />
     <Compile Include="Entities\ApplicationRole.cs" />
     <Compile Include="Entities\ApplicationUser.cs" />
+    <Compile Include="Entities\Gasto.cs" />
     <Compile Include="Entities\Maestros\TipoGasto.cs" />
     <Compile Include="Migrations\201904161711406_Primera_migracion.cs" />
     <Compile Include="Migrations\201904161711406_Primera_migracion.Designer.cs">
@@ -91,6 +93,10 @@
     <Compile Include="Migrations\201904211206561_CustomRoles.cs" />
     <Compile Include="Migrations\201904211206561_CustomRoles.Designer.cs">
       <DependentUpon>201904211206561_CustomRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905041433436_Entidad gastos.cs" />
+    <Compile Include="Migrations\201905041433436_Entidad gastos.Designer.cs">
+      <DependentUpon>201905041433436_Entidad gastos.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -108,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904211206561_CustomRoles.resx">
       <DependentUpon>201904211206561_CustomRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905041433436_Entidad gastos.resx">
+      <DependentUpon>201905041433436_Entidad gastos.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

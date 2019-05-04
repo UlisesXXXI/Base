@@ -15,6 +15,7 @@ namespace Application.bbdd
     {
         #region DbSet's
         public TipoGasto TiposGasto { get; set; }
+        public Gasto Gastos { get; set; }
         #endregion
 
        
@@ -39,6 +40,7 @@ namespace Application.bbdd
         protected void ConfigurationEntities(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new TipoGastoEntityConfiguration());
+            modelBuilder.Configurations.Add(new GastoEntityConfiguration());
         }
     }
 }

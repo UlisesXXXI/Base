@@ -9,8 +9,21 @@ namespace Application.bbdd.Entities.Maestros
 {
     public class TipoGasto
     {
+        #region Constructor
+        public TipoGasto()
+        {
+            Gastos = new List<Gasto>();
+        }
+        #endregion
+
+        #region Propiedades
         public int TipoGastoID { get; set; }
         [MaxLength(100)]
         public string Descripcion { get; set; }
+        #endregion
+       
+        #region Entidades Relacionadas
+        public virtual ICollection<Gasto> Gastos { get; set; }
+        #endregion
     }
 }

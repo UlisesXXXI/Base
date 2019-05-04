@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Implementacion\GastoService.cs" />
+    <Compile Include="Interface\IGastoService.cs" />
     <Compile Include="Implementacion\RoleService.cs" />
     <Compile Include="Implementacion\TipoGastoService.cs" />
     <Compile Include="Implementacion\UsuarioService.cs" />

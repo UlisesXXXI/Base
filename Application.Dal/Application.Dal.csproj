@@ -49,7 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GenericRepository.cs" />
+    <Compile Include="Implementacion\GastoRepository.cs" />
     <Compile Include="Implementacion\TipoGastoRepositorio.cs" />
+    <Compile Include="Interface\IGasto.cs" />
     <Compile Include="Interface\IRepositorioGenerico.cs" />
     <Compile Include="Implementacion\RepositorioGenerico.cs" />
     <Compile Include="Interface\ITipoGastoRepositorio.cs" />
