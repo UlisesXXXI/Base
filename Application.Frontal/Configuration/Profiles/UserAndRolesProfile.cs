@@ -14,7 +14,6 @@ namespace Application.Frontal.Configuration.Profiles
         public UserAndRolesProfile()
         {
 
-
             CreateMap<ApplicationUser, SelectListItem>()
                 .ForMember(dest => dest.Value, opt => opt.MapFrom(src => src.Id))
                 .ForMember(dest => dest.Text, opt => opt.MapFrom(src => src.UserName));
@@ -22,7 +21,7 @@ namespace Application.Frontal.Configuration.Profiles
             CreateMap<ApplicationRole, SelectListItem>()
                 .ForMember(dest => dest.Value, opt => opt.MapFrom(src => src.Id))
                  .ForMember(dest => dest.Text, opt => opt.MapFrom(src => src.Name));
-           
+
         }
 
        

@@ -238,6 +238,7 @@
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\UsersController.cs" />
+    <Compile Include="Configuration\Profiles\GastosProfile.cs" />
     <Compile Include="Configuration\Profiles\UserAndRolesProfile.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\GastoController.cs" />
@@ -253,6 +254,7 @@
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModel\Comun\SelectListViewModel.cs" />
     <Compile Include="ViewModel\ConfigureTwoFactorsViewModel.cs" />
+    <Compile Include="ViewModel\Gasto\GastoNewViewModel.cs" />
     <Compile Include="ViewModel\Login\AddPhoneNumberViewModel.cs" />
     <Compile Include="ViewModel\Login\ChangePasswordViewModel.cs" />
     <Compile Include="ViewModel\Login\FactorViewModel.cs" />
@@ -419,11 +421,11 @@
     <Content Include="Views\TipoGasto\Index.cshtml" />
     <Content Include="Views\Shared\TipoGasto\_TipoGastoTabla.cshtml" />
     <Content Include="Views\Shared\TipoGasto\_TipogGastoModal.cshtml" />
+    <Content Include="Views\Gasto\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Views\Gasto\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

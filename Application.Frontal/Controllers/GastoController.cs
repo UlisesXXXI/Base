@@ -1,4 +1,6 @@
-﻿using Application.Bll.Interface;
+﻿using Application.bbdd.Entities;
+using Application.Bll.Interface;
+using Application.Frontal.ViewModel.Gasto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,8 +19,16 @@ namespace Application.Frontal.Controllers
         // GET: Gasto
         public ActionResult Index()
         {
-            var lista = _service.ObtenerTodos();
-            return View();
+            var ListVmGasto = AutoMapper.Mapper.Map<List<Gasto>,List<GastoNewViewModel>>(_service.ObtenerTodosInclyendo(x => x.TipoGasto) as List<Gasto>); 
+            
+            return View(ListVmGasto);
+        }
+
+
+        public JsonResult ListaDeGastos()
+        {
+            var lista = _service.ObtenerTodosInclyendo(x => x.TipoGasto);
+            return Json(new { data = lista });
         }
     }
 }

@@ -13,6 +13,7 @@ namespace Application.Frontal.App_Start
             AutoMapper.Mapper.Initialize(cfg =>
             {
                 cfg.AddProfile(new UserAndRolesProfile());
+                cfg.AddProfile(new GastosProfile());
 
             });
         }

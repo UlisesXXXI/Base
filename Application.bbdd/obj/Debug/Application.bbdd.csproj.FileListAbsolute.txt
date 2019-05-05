@@ -77,3 +77,4 @@ C:\Desarrollos\Base\Application.bbdd\obj\Debug\Application.bbdd.csproj.CopyCompl
 C:\Desarrollos\Base\Application.bbdd\obj\Debug\Application.bbdd.dll
 C:\Desarrollos\Base\Application.bbdd\obj\Debug\Application.bbdd.pdb
 D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.Migrations.Entidadgastos.resources
+C:\Desarrollos\Base\Application.bbdd\obj\Debug\Application.bbdd.Migrations.Entidadgastos.resources
