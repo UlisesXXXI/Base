@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Application.Frontal.ViewModel.TipoGasto.TipoGastoViewModel>
+
+
+<table class="table" id="tablatiposdegasto" data-ajax=@Url.Action("ActualizarTablaTiposGasto") style="color:black">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoGastoID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <td></td>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @*@foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TipoGastoID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descripcion)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+        }
+    </tbody>*@
+        </tbody>
+    <tfoot>
+        <tr>
+            <td>
+                @Html.DisplayNameFor(model => model.TipoGastoID)
+            </td>
+            <td>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </td>
+            <td></td>
+        </tr>
+    </tfoot>
+
+</table>
+<script>
+    
+</script>
