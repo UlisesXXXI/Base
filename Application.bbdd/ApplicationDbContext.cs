@@ -22,6 +22,8 @@ namespace Application.bbdd
         public ApplicationDbContext()
             : base("DefaultConnection")
         {
+            Configuration.LazyLoadingEnabled = false;
+            Configuration.ProxyCreationEnabled = false;
         }
 
         public static ApplicationDbContext Create()

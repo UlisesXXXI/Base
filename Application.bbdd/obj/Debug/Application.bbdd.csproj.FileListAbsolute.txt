@@ -39,7 +39,6 @@ D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.Migrations.Pri
 D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.csproj.GenerateResource.cache
 D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.Migrations.SegundaPrimeraMigracion.resources
 D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.Migrations.CustomRoles.resources
-D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.csprojAssemblyReference.cache
 C:\Desarrollos\Base\Application.bbdd\bin\Debug\Application.bbdd.dll.config
 C:\Desarrollos\Base\Application.bbdd\bin\Debug\Application.bbdd.dll
 C:\Desarrollos\Base\Application.bbdd\bin\Debug\Application.bbdd.pdb
@@ -78,3 +77,4 @@ C:\Desarrollos\Base\Application.bbdd\obj\Debug\Application.bbdd.dll
 C:\Desarrollos\Base\Application.bbdd\obj\Debug\Application.bbdd.pdb
 D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.Migrations.Entidadgastos.resources
 C:\Desarrollos\Base\Application.bbdd\obj\Debug\Application.bbdd.Migrations.Entidadgastos.resources
+D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.csprojAssemblyReference.cache

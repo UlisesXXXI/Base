@@ -14,6 +14,7 @@ namespace Application.Frontal.App_Start
             {
                 cfg.AddProfile(new UserAndRolesProfile());
                 cfg.AddProfile(new GastosProfile());
+                
 
             });
         }

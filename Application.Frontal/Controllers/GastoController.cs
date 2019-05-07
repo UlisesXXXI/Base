@@ -28,7 +28,8 @@ namespace Application.Frontal.Controllers
         public JsonResult ListaDeGastos()
         {
             var lista = _service.ObtenerTodosInclyendo(x => x.TipoGasto);
-            return Json(new { data = lista });
+            if (lista == null) lista = new List<Gasto>();
+            return Json(new { data = lista },JsonRequestBehavior.AllowGet);
         }
     }
 }

@@ -11,7 +11,7 @@ namespace Application.Bll.Implementacion
 {
     public class GastoService:ServicioBase<Gasto>,IGastoService
     {
-        public GastoService(IRepositorioGenerico<Gasto> repositorio):base(repositorio)
+        public GastoService(IGastoRepository repositorio):base(repositorio)
         {
 
         }

@@ -33,7 +33,7 @@ namespace Application.Dal.Implementacion
         }
 
     
-        public DbSet<T> IncluirPropiedades(Expression<Func<T, bool>>[] propiedades)
+        public DbSet<T> IncluirPropiedades(Expression<Func<T, object>>[] propiedades)
         {
             DbSet<T> query =  _ctx.Set<T>();
             foreach(var w in propiedades)
@@ -64,7 +64,7 @@ namespace Application.Dal.Implementacion
             return _ctx.Set<T>().Find(Id);
         }
 
-        public T BuscarConPropiedades(object[] Id, params Expression<Func<T, bool>>[] propiedades)
+        public T BuscarConPropiedades(object[] Id, params Expression<Func<T, object>>[] propiedades)
         {
             var qry = IncluirPropiedades(propiedades);
 
@@ -76,7 +76,7 @@ namespace Application.Dal.Implementacion
             return _ctx.Set<T>().ToList();
         }
 
-        public IList<T> ObtenerConPropiedades(Expression<Func<T, bool>> expresion, params Expression<Func<T, bool>>[] propiedades)
+        public IList<T> ObtenerConPropiedades(Expression<Func<T, bool>> expresion, params Expression<Func<T, object>>[] propiedades)
         {
             var consulta = IncluirPropiedades(propiedades);
             return consulta.Where(expresion).ToList();
