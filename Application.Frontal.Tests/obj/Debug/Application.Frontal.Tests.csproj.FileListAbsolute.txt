@@ -127,7 +127,6 @@ D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\es\Microsoft.AspNet.Id
 D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\es\Microsoft.AspNet.Identity.Owin.resources.dll
 D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
 D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\es\EntityFramework.resources.dll
-D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\obj\Debug\Application.Frontal.Tests.csprojAssemblyReference.cache
 D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\obj\Debug\Application.Frontal.Tests.csproj.CoreCompileInputs.cache
 D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\obj\Debug\Application.Frontal.Tests.csproj.CopyComplete
 D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\obj\Debug\Application.Frontal.Tests.dll
@@ -243,3 +242,4 @@ C:\Desarrollos\Base\Application.Frontal.Tests\obj\Debug\Application.Frontal.Test
 C:\Desarrollos\Base\Application.Frontal.Tests\obj\Debug\Application.Frontal.Tests.csproj.CopyComplete
 C:\Desarrollos\Base\Application.Frontal.Tests\obj\Debug\Application.Frontal.Tests.dll
 C:\Desarrollos\Base\Application.Frontal.Tests\obj\Debug\Application.Frontal.Tests.pdb
+D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\obj\Debug\Application.Frontal.Tests.csprojAssemblyReference.cache

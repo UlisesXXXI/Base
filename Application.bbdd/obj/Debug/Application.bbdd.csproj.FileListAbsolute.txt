@@ -66,7 +66,6 @@ C:\Desarrollos\Base\Application.bbdd\bin\Debug\Newtonsoft.Json.xml
 C:\Desarrollos\Base\Application.bbdd\bin\Debug\es\Microsoft.AspNet.Identity.Core.resources.dll
 C:\Desarrollos\Base\Application.bbdd\bin\Debug\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
 C:\Desarrollos\Base\Application.bbdd\bin\Debug\es\Microsoft.AspNet.Identity.Owin.resources.dll
-C:\Desarrollos\Base\Application.bbdd\obj\Debug\Application.bbdd.csprojAssemblyReference.cache
 C:\Desarrollos\Base\Application.bbdd\obj\Debug\Application.bbdd.Migrations.Primera_migracion.resources
 C:\Desarrollos\Base\Application.bbdd\obj\Debug\Application.bbdd.Migrations.SegundaPrimeraMigracion.resources
 C:\Desarrollos\Base\Application.bbdd\obj\Debug\Application.bbdd.Migrations.CustomRoles.resources
@@ -77,4 +76,3 @@ C:\Desarrollos\Base\Application.bbdd\obj\Debug\Application.bbdd.dll
 C:\Desarrollos\Base\Application.bbdd\obj\Debug\Application.bbdd.pdb
 D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.Migrations.Entidadgastos.resources
 C:\Desarrollos\Base\Application.bbdd\obj\Debug\Application.bbdd.Migrations.Entidadgastos.resources
-D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.csprojAssemblyReference.cache

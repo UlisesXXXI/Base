@@ -1,0 +1,49 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body style="padding-top:0px">
+    <div class="container-fluid" style="z-index: 5554 !important;background-color: black;min-height: 100%;position: absolute;width: 100%;">
+        <div class="row col-sm-6 col-xs-offset-3">
+
+            <form style="border: 1px solid #bebbbb; margin: 20px; padding: 10px;border-radius: 10px; box-shadow: grey;background-color: rgb(240, 231, 231);z-index: 5555">
+                <div class="form-group row">
+                    <label class="col-md-2 col-form-label">Usuario</label>
+                    <div class="col-md-8">
+
+                        <input class="form-control">
+                    </div>Au
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-2 col-form-label">Password</label>
+                    <div class="col-md-8">
+                        <input type="password" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+
+                    <input type="submit" class="btn btn-success col-xs-2 col-xs-offset-5">
+                </div>
+
+            </form>
+        </div>
+
+
+
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    
+</body>
+</html>

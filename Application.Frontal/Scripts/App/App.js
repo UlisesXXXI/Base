@@ -132,7 +132,7 @@
             var bodytemplate = this.template
             cont.innerHTML = bodytemplate;
             var body = document.getElementsByTagName('body');
-            body[0].appendChild(  cont);
+            body[0].appendChild(cont);
             $("#" + this.element).fadeIn();
 
         },
@@ -143,7 +143,13 @@
         }
 
 
-    }
+    };
+
+    application.getBaseUrl = function () {
+        var getUrl = window.location;
+        var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+        return baseUrl;
+    };
 
     $(document).ajaxStart(function () {
         App.Spinner.Start();
@@ -153,6 +159,7 @@
         App.Spinner.Stop();
     });
 
+   
 
     return application;
 

@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Web.Mvc;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Application.Frontal;
+﻿using System.Web.Mvc;
 using Application.Frontal.Controllers;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Application.Frontal.Tests.Controllers
 {

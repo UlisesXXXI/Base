@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Application.Frontal.ViewModel.TipoGasto.TipoGastoViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <button class="btn btn-success" onclick="App.tipogasto.nuevoTipo()">Nuevo</button>
+</p>
+
+
+@Html.Partial("TipoGasto/_TipoGastoTabla", Model)
+
+
+@section scripts{
+
+    <script src="~/Scripts/App/App.tipogasto.js"></script>
+
+}

@@ -424,6 +424,7 @@
     <Content Include="Views\Shared\TipoGasto\_TipoGastoTabla.cshtml" />
     <Content Include="Views\Shared\TipoGasto\_TipogGastoModal.cshtml" />
     <Content Include="Views\Gasto\Index.cshtml" />
+    <Content Include="Views\Gasto\Detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -478,9 +479,9 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>51356</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:51356/</IISUrl>
+          <IISUrl>http://localhost/Application.Frontal</IISUrl>
           <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
-          <IISAppRootUrl>http://localhost:80/</IISAppRootUrl>
+          <IISAppRootUrl>http://localhost/Application.Frontal</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

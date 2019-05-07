@@ -26,6 +26,9 @@ namespace Application.Frontal.Configuration.Profiles
             CreateMap<TipoGastoViewModel, TipoGasto>();
             CreateMap<GastoNewViewModel, Gasto>();
             CreateMap< Gasto, GastoNewViewModel>();
+            CreateMap<TipoGasto, SelectListItem>()
+                 .ForMember(dest => dest.Text, opt => opt.MapFrom(src => src.Descripcion))
+                 .ForMember(dest => dest.Value, opt => opt.MapFrom(src => src.TipoGastoID.ToString()));
 
         }
     }

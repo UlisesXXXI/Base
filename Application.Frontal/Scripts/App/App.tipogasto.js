@@ -3,6 +3,9 @@
 App.tipogasto = {
 
     CargarDatatable: function (dataTableName) {
+        var getUrl = window.location;
+        var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+        var url = baseUrl + "TipoGasto/NuevoTipo";
         var datatable = $("#" + dataTableName);
         var urlajax = datatable.attr["data-ajax"];
         $("#" + dataTableName).DataTable({
@@ -18,7 +21,7 @@ App.tipogasto = {
                     "render": function (data, type, full, meta) {
                         var buttonID = full.tipogasto;
                         return "<a class= 'btn btn-danger glyphicon glyphicon-remove' role='button' onclick='App.tipogasto.eliminarTipo(" + full.TipoGastoID + ")'></a>" +
-                            "<a class= 'btn btn-success glyphicon glyphicon-edit' role='button' onclick='App.tipogasto.nuevoTipo(" + full.TipoGastoID + ")'></a>";
+                            "<a class= 'btn btn-success glyphicon glyphicon-edit' role='button' onclick='App.tipogasto.nuevoTipo('"+url + "',"+ full.TipoGastoID + ")'></a>";
                                 
 
 
@@ -38,7 +41,7 @@ App.tipogasto = {
         $("#" + dataTableName).DataTable().ajax.reload();
        
     },
-    nuevoTipo: function(id){
+    nuevoTipo: function(url,id){
         if (id == undefined) id = 0;
         var containerPopUp = document.createElement("div");
         containerPopUp.id = "container-tipogasto-popup";
@@ -47,7 +50,7 @@ App.tipogasto = {
         bdy[0].appendChild(containerPopUp);
         
         $.ajax({
-            url: "/TipoGasto/NuevoTipo",
+            url: url,
             type: "POST",
             data: { "id": id },
             success: function (response) {
@@ -80,7 +83,7 @@ App.tipogasto = {
                                        
 
                                         $.ajax({
-                                            url: "/TipoGasto/Eliminar",
+                                            url: App.getBaseUrl() +  "/TipoGasto/Eliminar",
                                             type: "POST",
                                             data: { "id": param.id },
                                             success: function (response) {
