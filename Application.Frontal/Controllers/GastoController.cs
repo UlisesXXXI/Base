@@ -27,6 +27,20 @@ namespace Application.Frontal.Controllers
             return View(ListVmGasto);
         }
 
+        [HttpPost]
+        public ActionResult Create(GastoNewViewModel vm)
+        {
+            if (ModelState.IsValid)
+            {
+                Gasto gasto = AutoMapper.Mapper.Map<GastoNewViewModel, Gasto>(vm);
+                _service.Insertar(gasto);
+                return RedirectToAction("Index");
+            }
+
+            return RedirectToAction("Detail", vm);
+           
+        }
+
         public ActionResult Detail(int? id)
         {
            var gasto =  _service.Obtener(id);

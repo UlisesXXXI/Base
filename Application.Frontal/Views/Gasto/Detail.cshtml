@@ -1,6 +1,6 @@
 ﻿@model Application.Frontal.ViewModel.Gasto.GastoNewViewModel
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm("Create","Gasto",FormMethod.Post)) 
 {
     @Html.AntiForgeryToken()
     

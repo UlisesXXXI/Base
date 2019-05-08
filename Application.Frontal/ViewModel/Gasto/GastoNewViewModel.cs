@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -12,7 +13,10 @@ namespace Application.Frontal.ViewModel.Gasto
 
         #region Propiedades
         public int Id { get; set; }
+        [MaxLength(250)]
         public string Descripcion { get; set; }
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime Fecha { get; set; }
         public int TipoGastoID { get; set; }
         public double Importe { get; set; }
