@@ -44,3 +44,5 @@ C:\Desarrollos\Base\Application.Bll\obj\Debug\Application.Bll.csproj.CoreCompile
 C:\Desarrollos\Base\Application.Bll\obj\Debug\Application.Bll.csproj.CopyComplete
 C:\Desarrollos\Base\Application.Bll\obj\Debug\Application.Bll.dll
 C:\Desarrollos\Base\Application.Bll\obj\Debug\Application.Bll.pdb
+D:\PROYECTOS\ASP\Base\Application.Bll\bin\Debug\Application.Infraestructura.dll
+D:\PROYECTOS\ASP\Base\Application.Bll\bin\Debug\Application.Infraestructura.pdb

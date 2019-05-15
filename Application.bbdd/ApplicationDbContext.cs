@@ -1,6 +1,8 @@
 ﻿using Application.bbdd.Configuration;
 using Application.bbdd.Entities;
 using Application.bbdd.Entities.Maestros;
+using Application.bbdd.Filters;
+using EntityFramework.DynamicFilters;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
@@ -24,6 +26,8 @@ namespace Application.bbdd
         {
             Configuration.LazyLoadingEnabled = false;
             Configuration.ProxyCreationEnabled = false;
+            
+           
         }
 
         public static ApplicationDbContext Create()
@@ -43,6 +47,11 @@ namespace Application.bbdd
         {
             modelBuilder.Configurations.Add(new TipoGastoEntityConfiguration());
             modelBuilder.Configurations.Add(new GastoEntityConfiguration());
+        }
+
+        private void Filters(ref DbModelBuilder modelBuilder)
+        {
+            SoftDeleleteFilter.AddFilter(ref modelBuilder);
         }
     }
 }

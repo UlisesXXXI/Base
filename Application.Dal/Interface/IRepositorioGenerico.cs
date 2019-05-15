@@ -19,7 +19,8 @@ namespace Application.Dal.Interface
         T Insertar(T entidad);
         T Actualizar(T entidad);
         void Eliminar(Object[] Id);
-        DbSet<T> IncluirPropiedades(Expression<Func<T, object>>[] propiedades);
+        IQueryable<T> IncluirPropiedades(Expression<Func<T, object>>[] propiedades);
+        List<T> ObtenerTodasIncluyendo(params Expression<Func<T, object>>[] propiedades);
         
     }
 }

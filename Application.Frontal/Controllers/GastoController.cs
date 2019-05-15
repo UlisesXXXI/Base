@@ -22,7 +22,8 @@ namespace Application.Frontal.Controllers
         // GET: Gasto
         public ActionResult Index()
         {
-            var ListVmGasto = AutoMapper.Mapper.Map<List<Gasto>,List<GastoNewViewModel>>(_service.ObtenerTodosInclyendo(x => x.TipoGasto) as List<Gasto>); 
+            List<Gasto> lista = _service.ObtenerTodosInclyendo(x => x.TipoGasto) as List<Gasto>;
+            var ListVmGasto = AutoMapper.Mapper.Map<List<Gasto>,List<GastoNewViewModel>>(lista); 
             
             return View(ListVmGasto);
         }
@@ -36,8 +37,9 @@ namespace Application.Frontal.Controllers
                 _service.Insertar(gasto);
                 return RedirectToAction("Index");
             }
+            vm.ComboTipos = AutoMapper.Mapper.Map<List<TipoGasto>, List<SelectListItem>>((List<TipoGasto>)_tipoGastoService.ObtenerTodos());
 
-            return RedirectToAction("Detail", vm);
+            return View("Detail", vm);
            
         }
 
@@ -59,6 +61,12 @@ namespace Application.Frontal.Controllers
             return View(viewmodelgasto);
         }
 
+       [HttpPost]
+        public JsonResult Eliminar(int Id)
+        {
+            _service.Eliminar(Id);
+            return Json(new { resultado = "Ok" });
+        }
 
         public JsonResult ListaDeGastos()
         {

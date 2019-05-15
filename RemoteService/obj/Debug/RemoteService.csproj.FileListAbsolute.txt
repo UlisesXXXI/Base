@@ -1,0 +1,7 @@
+D:\PROYECTOS\ASP\Base\RemoteService\bin\Debug\RemoteService.dll.config
+D:\PROYECTOS\ASP\Base\RemoteService\bin\Debug\RemoteService.dll
+D:\PROYECTOS\ASP\Base\RemoteService\bin\Debug\RemoteService.pdb
+D:\PROYECTOS\ASP\Base\RemoteService\obj\Debug\RemoteService.csprojAssemblyReference.cache
+D:\PROYECTOS\ASP\Base\RemoteService\obj\Debug\RemoteService.csproj.CoreCompileInputs.cache
+D:\PROYECTOS\ASP\Base\RemoteService\obj\Debug\RemoteService.dll
+D:\PROYECTOS\ASP\Base\RemoteService\obj\Debug\RemoteService.pdb

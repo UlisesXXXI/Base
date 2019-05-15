@@ -1,12 +1,10 @@
-﻿using Application.bbdd.Entities;
-using Application.Dal.Interface;
+﻿using Application.Dal.Interface;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
+using Application.Infraestructura.EntityFramework;
 
 namespace Application.Dal.Implementacion
 {
@@ -33,12 +31,12 @@ namespace Application.Dal.Implementacion
         }
 
     
-        public DbSet<T> IncluirPropiedades(Expression<Func<T, object>>[] propiedades)
+        public IQueryable<T> IncluirPropiedades(Expression<Func<T, object>>[] propiedades)
         {
-            DbSet<T> query =  _ctx.Set<T>();
+            IQueryable<T> query =  _ctx.Set<T>();
             foreach(var w in propiedades)
             {
-                query.Include(w);
+                query.Include<T, Object>(w);
             }
             return query;
         }
@@ -66,9 +64,7 @@ namespace Application.Dal.Implementacion
 
         public T BuscarConPropiedades(object[] Id, params Expression<Func<T, object>>[] propiedades)
         {
-            var qry = IncluirPropiedades(propiedades);
-
-            return qry.Find(Id);
+            return _ctx.Set<T>().Includes(propiedades).First();
         }
 
         public IList<T> ObtenerTodas()
@@ -78,9 +74,20 @@ namespace Application.Dal.Implementacion
 
         public IList<T> ObtenerConPropiedades(Expression<Func<T, bool>> expresion, params Expression<Func<T, object>>[] propiedades)
         {
-            var consulta = IncluirPropiedades(propiedades);
-            return consulta.Where(expresion).ToList();
+
+            return _ctx.Set<T>().Includes(propiedades).Where(expresion).ToList();
         }
 
+        public List<T> ObtenerTodasIncluyendo(params Expression<Func<T, object>>[] propiedades)
+        {
+           var dbset = _ctx.Set<T>();
+            IQueryable<T> query = null;
+           foreach(var prop in propiedades)
+            {
+                query = dbset.Include(prop);
+            }
+
+            return query.ToList();
+        }
     }
 }

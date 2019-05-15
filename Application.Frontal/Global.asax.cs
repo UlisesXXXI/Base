@@ -1,6 +1,7 @@
 ﻿using Application.Frontal.App_Start;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -26,9 +27,12 @@ namespace Application.Frontal
         protected void Application_Error()
         {
             var ex = Server.GetLastError();
+            HttpException httpException = ex as HttpException;
             Response.Clear();
 
-            HttpException httpException = ex as HttpException;
+
+            
+            
             
             
         }

@@ -466,3 +466,5 @@ C:\Desarrollos\Base\Application.Frontal\bin\roslyn\System.Xml.XPath.dll
 C:\Desarrollos\Base\Application.Frontal\bin\roslyn\System.Xml.XPath.XDocument.dll
 C:\Desarrollos\Base\Application.Frontal\bin\roslyn\vbc.exe
 C:\Desarrollos\Base\Application.Frontal\bin\roslyn\VBCSCompiler.exe
+D:\PROYECTOS\ASP\Base\Application.Frontal\bin\Application.Infraestructura.dll
+D:\PROYECTOS\ASP\Base\Application.Frontal\bin\Application.Infraestructura.pdb

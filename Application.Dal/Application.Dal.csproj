@@ -62,6 +62,10 @@
       <Project>{181A159B-EA5E-4613-8A6F-FA21BB54536E}</Project>
       <Name>Application.bbdd</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Application.Infraestructura\Application.Infraestructura.csproj">
+      <Project>{f85544af-f729-4a3e-8b22-7731d1e5af9f}</Project>
+      <Name>Application.Infraestructura</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

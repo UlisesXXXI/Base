@@ -106,6 +106,9 @@
                     });
                 }
             }
+        },
+        Close: function () {
+            $(this.element).remove();
         }
     }
 
@@ -159,8 +162,16 @@
         App.Spinner.Stop();
     });
 
-   
+    application.CreateUrl = function (url) {
+        var urlbase = this.getBaseUrl();
+        var urlTotal = urlbase + url;
+       return this.getBaseUrl() + url;
+    }
 
+    application.Redireccionar = function (url) {
+        this.Spinner.Start();
+        window.location.href = url;
+    }
     return application;
 
 })();

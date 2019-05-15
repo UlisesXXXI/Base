@@ -15,9 +15,7 @@ namespace Application.bbdd.Configuration
             this.Property(p => p.Descripcion)
                     .HasMaxLength(250);
 
-            this.HasRequired<TipoGasto>(p => p.TipoGasto)
-                .WithMany(x => x.Gastos)
-                .HasForeignKey(k => k.TipoGastoID);
+            this.HasRequired(t => t.TipoGasto).WithMany().HasForeignKey(t => t.TipoGastoID).WillCascadeOnDelete(false);
                     
         }
     }

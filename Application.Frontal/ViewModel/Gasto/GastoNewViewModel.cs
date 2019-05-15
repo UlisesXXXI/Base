@@ -20,8 +20,9 @@ namespace Application.Frontal.ViewModel.Gasto
         public DateTime Fecha { get; set; }
         public int TipoGastoID { get; set; }
         public double Importe { get; set; }
+        [Display(Name ="Tipo gasto")]
+        public string TipoGastoTexto { get; set; }
         #endregion
-
         #region Propiedades Navegacions
         public Application.bbdd.Entities.Maestros.TipoGasto TipoGasto { get; set; }
         #endregion

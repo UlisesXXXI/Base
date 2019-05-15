@@ -15,6 +15,7 @@ namespace Application.bbdd.Configuration
         {
             this.ToTable("TipoGasto");
             this.HasKey<int>(k => k.TipoGastoID);
+            
 
             this.Property(p => p.Descripcion)
                     .IsRequired()

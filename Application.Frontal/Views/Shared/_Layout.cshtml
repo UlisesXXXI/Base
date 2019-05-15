@@ -48,7 +48,7 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
+    <div class="container body-content" id="cuerpoPrincipal">
         @RenderBody()
         <hr />
         <footer>
@@ -60,7 +60,9 @@
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/App")
     @Scripts.Render("~/bundles/datatables")
+    @Scripts.Render("~/bundles/moment")
     
+
     @RenderSection("scripts", required: false)
 </body>
 </html>

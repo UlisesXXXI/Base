@@ -12,7 +12,7 @@ namespace Application.bbdd.Entities.Maestros
         #region Constructor
         public TipoGasto()
         {
-            Gastos = new List<Gasto>();
+           
         }
         #endregion
 
@@ -22,8 +22,5 @@ namespace Application.bbdd.Entities.Maestros
         public string Descripcion { get; set; }
         #endregion
        
-        #region Entidades Relacionadas
-        public virtual ICollection<Gasto> Gastos { get; set; }
-        #endregion
     }
 }

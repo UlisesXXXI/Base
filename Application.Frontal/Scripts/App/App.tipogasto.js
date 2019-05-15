@@ -94,7 +94,8 @@ App.tipogasto = {
                                                 App.tipogasto.ActualizarTabla("tablatiposdegasto");
                                             },
                                             error: function (XMLHttpRequest, textStatus, errorThrown) {
-                                                alert("Status: " + textStatus); alert("Error: " + errorThrown);
+                                                App.Aviso.Open({ msg:"No se pudo eliminar, No existe o hay entidades relacionadas", title: "Error: " + errorThrown });
+                                                
                                             }
 
 

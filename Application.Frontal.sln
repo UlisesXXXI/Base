@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.services", "App
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Frontal", "Application.Frontal\Application.Frontal.csproj", "{F5252BB4-7B2F-4B97-AF31-5678A8558628}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Infraestructura", "Application.Infraestructura\Application.Infraestructura.csproj", "{F85544AF-F729-4A3E-8B22-7731D1E5AF9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteService", "RemoteService\RemoteService.csproj", "{DB444DB6-2E5B-434C-87FF-F6CDDD7265FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{F5252BB4-7B2F-4B97-AF31-5678A8558628}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5252BB4-7B2F-4B97-AF31-5678A8558628}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5252BB4-7B2F-4B97-AF31-5678A8558628}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F85544AF-F729-4A3E-8B22-7731D1E5AF9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F85544AF-F729-4A3E-8B22-7731D1E5AF9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F85544AF-F729-4A3E-8B22-7731D1E5AF9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F85544AF-F729-4A3E-8B22-7731D1E5AF9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB444DB6-2E5B-434C-87FF-F6CDDD7265FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB444DB6-2E5B-434C-87FF-F6CDDD7265FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB444DB6-2E5B-434C-87FF-F6CDDD7265FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB444DB6-2E5B-434C-87FF-F6CDDD7265FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

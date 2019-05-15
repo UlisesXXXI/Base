@@ -64,9 +64,8 @@ namespace Application.Bll.Implementacion
 
         public IList<T> ObtenerTodosInclyendo(params Expression<Func<T, object>>[] propiedades)
         {
-            var query = _repositorio.IncluirPropiedades(propiedades);
-            return query.ToList();
 
+            return _repositorio.ObtenerTodasIncluyendo(propiedades);
         }
         #endregion
 

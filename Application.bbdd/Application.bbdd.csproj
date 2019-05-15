@@ -32,10 +32,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.DynamicFilters, Version=3.0.1.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.DynamicFilters.3.0.1\lib\net40\EntityFramework.DynamicFilters.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.2\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
@@ -81,7 +84,9 @@
     <Compile Include="Entities\ApplicationRole.cs" />
     <Compile Include="Entities\ApplicationUser.cs" />
     <Compile Include="Entities\Gasto.cs" />
+    <Compile Include="Entities\Interfaces\ISoftDelete.cs" />
     <Compile Include="Entities\Maestros\TipoGasto.cs" />
+    <Compile Include="Filters\SoftDeleleteFilter.cs" />
     <Compile Include="Migrations\201904161711406_Primera_migracion.cs" />
     <Compile Include="Migrations\201904161711406_Primera_migracion.Designer.cs">
       <DependentUpon>201904161711406_Primera_migracion.cs</DependentUpon>
@@ -97,6 +102,10 @@
     <Compile Include="Migrations\201905041433436_Entidad gastos.cs" />
     <Compile Include="Migrations\201905041433436_Entidad gastos.Designer.cs">
       <DependentUpon>201905041433436_Entidad gastos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905110845427_quitar borrado en cascada.cs" />
+    <Compile Include="Migrations\201905110845427_quitar borrado en cascada.Designer.cs">
+      <DependentUpon>201905110845427_quitar borrado en cascada.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -117,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905041433436_Entidad gastos.resx">
       <DependentUpon>201905041433436_Entidad gastos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905110845427_quitar borrado en cascada.resx">
+      <DependentUpon>201905110845427_quitar borrado en cascada.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
