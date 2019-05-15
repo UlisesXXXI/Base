@@ -5,4 +5,4 @@ D:\PROYECTOS\ASP\Base\Application.Infraestructura\obj\Debug\Application.Infraest
 D:\PROYECTOS\ASP\Base\Application.Infraestructura\obj\Debug\Application.Infraestructura.csproj.CopyComplete
 D:\PROYECTOS\ASP\Base\Application.Infraestructura\obj\Debug\Application.Infraestructura.dll
 D:\PROYECTOS\ASP\Base\Application.Infraestructura\obj\Debug\Application.Infraestructura.pdb
-D:\PROYECTOS\ASP\Base\Application.Infraestructura\obj\Debug\Application.Infraestructura.csprojAssemblyReference.cache
+D:\PROYECTOS\ASP\Base\Application.Infraestructura\bin\Debug\EntityFramework.xml

@@ -76,5 +76,6 @@ C:\Desarrollos\Base\Application.bbdd\obj\Debug\Application.bbdd.dll
 C:\Desarrollos\Base\Application.bbdd\obj\Debug\Application.bbdd.pdb
 D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.Migrations.Entidadgastos.resources
 C:\Desarrollos\Base\Application.bbdd\obj\Debug\Application.bbdd.Migrations.Entidadgastos.resources
-D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.csprojAssemblyReference.cache
 D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.Migrations.quitarborradoencascada.resources
+D:\PROYECTOS\ASP\Base\Application.bbdd\bin\Debug\EntityFramework.DynamicFilters.dll
+D:\PROYECTOS\ASP\Base\Application.bbdd\bin\Debug\EntityFramework.DynamicFilters.xml

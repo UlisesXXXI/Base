@@ -1,5 +1,6 @@
 ﻿using Application.bbdd.Entities.Maestros;
 using Application.Bll.Interface;
+using Application.Frontal.Controllers.Interfaces;
 using Application.Frontal.ViewModel.TipoGasto;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ using System.Web.Mvc;
 
 namespace Application.Frontal.Controllers
 {
-    public class TipoGastoController : Controller
+    public class TipoGastoController : ControladorBase
     {
 
         private ITipoGastoService _tipoGastoservice;

@@ -51,4 +51,3 @@ C:\Desarrollos\Base\Application.services\obj\Debug\Application.services.csproj.C
 C:\Desarrollos\Base\Application.services\obj\Debug\Application.services.csproj.CopyComplete
 C:\Desarrollos\Base\Application.services\obj\Debug\Application.services.dll
 C:\Desarrollos\Base\Application.services\obj\Debug\Application.services.pdb
-D:\PROYECTOS\ASP\Base\Application.services\obj\Debug\Application.services.csprojAssemblyReference.cache

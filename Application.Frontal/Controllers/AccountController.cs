@@ -10,11 +10,12 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Application.Frontal.Models;
 using Application.bbdd.Entities;
+using Application.Frontal.Controllers.Interfaces;
 
 namespace Application.Frontal.Controllers
 {
     [Authorize]
-    public class AccountController : Controller
+    public class AccountController : ControladorBase
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;

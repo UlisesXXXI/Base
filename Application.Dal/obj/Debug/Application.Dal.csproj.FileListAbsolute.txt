@@ -52,3 +52,5 @@ C:\Desarrollos\Base\Application.Dal\obj\Debug\Application.Dal.dll
 C:\Desarrollos\Base\Application.Dal\obj\Debug\Application.Dal.pdb
 D:\PROYECTOS\ASP\Base\Application.Dal\bin\Debug\Application.Infraestructura.dll
 D:\PROYECTOS\ASP\Base\Application.Dal\bin\Debug\Application.Infraestructura.pdb
+D:\PROYECTOS\ASP\Base\Application.Dal\bin\Debug\EntityFramework.DynamicFilters.dll
+D:\PROYECTOS\ASP\Base\Application.Dal\bin\Debug\EntityFramework.DynamicFilters.xml

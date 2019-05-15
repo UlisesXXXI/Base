@@ -1,6 +1,7 @@
 ﻿using Application.bbdd.Entities;
 using Application.bbdd.Entities.Maestros;
 using Application.Bll.Interface;
+using Application.Frontal.Controllers.Interfaces;
 using Application.Frontal.ViewModel.Gasto;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ using System.Web.Mvc;
 
 namespace Application.Frontal.Controllers
 {
-    public class GastoController : Controller
+    public class GastoController : ControladorBase
     {
         private IGastoService _service;
         private ITipoGastoService _tipoGastoService;

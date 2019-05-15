@@ -46,3 +46,10 @@ C:\Desarrollos\Base\Application.Bll\obj\Debug\Application.Bll.dll
 C:\Desarrollos\Base\Application.Bll\obj\Debug\Application.Bll.pdb
 D:\PROYECTOS\ASP\Base\Application.Bll\bin\Debug\Application.Infraestructura.dll
 D:\PROYECTOS\ASP\Base\Application.Bll\bin\Debug\Application.Infraestructura.pdb
+D:\PROYECTOS\ASP\Base\Application.Bll\bin\Debug\Application.Bll.dll.config
+D:\PROYECTOS\ASP\Base\Application.Bll\bin\Debug\EntityFramework.dll
+D:\PROYECTOS\ASP\Base\Application.Bll\bin\Debug\EntityFramework.DynamicFilters.dll
+D:\PROYECTOS\ASP\Base\Application.Bll\bin\Debug\EntityFramework.SqlServer.dll
+D:\PROYECTOS\ASP\Base\Application.Bll\bin\Debug\EntityFramework.xml
+D:\PROYECTOS\ASP\Base\Application.Bll\bin\Debug\EntityFramework.DynamicFilters.xml
+D:\PROYECTOS\ASP\Base\Application.Bll\bin\Debug\EntityFramework.SqlServer.xml

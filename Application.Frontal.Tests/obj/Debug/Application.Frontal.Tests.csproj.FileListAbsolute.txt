@@ -243,3 +243,8 @@ C:\Desarrollos\Base\Application.Frontal.Tests\obj\Debug\Application.Frontal.Test
 C:\Desarrollos\Base\Application.Frontal.Tests\obj\Debug\Application.Frontal.Tests.dll
 C:\Desarrollos\Base\Application.Frontal.Tests\obj\Debug\Application.Frontal.Tests.pdb
 D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\obj\Debug\Application.Frontal.Tests.csprojAssemblyReference.cache
+D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\EntityFramework.DynamicFilters.dll
+D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\Application.Infraestructura.dll
+D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\Application.Bll.dll.config
+D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\EntityFramework.DynamicFilters.xml
+D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\Application.Infraestructura.pdb
