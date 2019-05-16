@@ -1,4 +1,5 @@
 ﻿using Application.Frontal.App_Start;
+using Application.Infraestructura.Errors;
 using log4net;
 using log4net.Config;
 using System;
@@ -19,6 +20,9 @@ namespace Application.Frontal
     {
         protected  void Application_Start()
         {
+
+            AreaRegistration.RegisterAllAreas();
+
             XmlConfigurator.Configure();
             DatosInicialesConfiguracion.Load();
 
@@ -27,6 +31,7 @@ namespace Application.Frontal
             
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AutoMapperConfig.Configure();
         }
@@ -35,17 +40,24 @@ namespace Application.Frontal
         {
             var ex = Server.GetLastError();
             ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
-            log.Error(Guid.NewGuid());
+
+            var _error = new CustomError();
+            _error.CodigoError = Guid.NewGuid().ToString();
+
+
+            log.Error(_error.CodigoError, ex);
             log.Error(ex.Message);
 
-           
-           
-            
-            
+
+
+
+
             //url = HttpUtility.UrlEncode(url); 
-            
-           
-            Response.Redirect("~/Home/Error/}");
+
+#if !DEBUG
+        Response.Redirect("~/Home/Error/}");
+#endif
+
 
 
 

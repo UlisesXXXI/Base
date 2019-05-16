@@ -14,7 +14,8 @@ namespace Application.Frontal
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            AreaRegistration.RegisterAllAreas();
+            
+
 
 
             routes.MapRoute(

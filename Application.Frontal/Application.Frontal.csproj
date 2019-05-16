@@ -463,6 +463,10 @@
       <Project>{7F14611C-C8E5-4C96-A01B-C4D13F3B62FD}</Project>
       <Name>Application.Dal</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Application.Infraestructura\Application.Infraestructura.csproj">
+      <Project>{F85544AF-F729-4A3E-8B22-7731D1E5AF9F}</Project>
+      <Name>Application.Infraestructura</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Application.services\Application.services.csproj">
       <Project>{a436e009-cf83-43c6-974d-a35aba2d8dbe}</Project>
       <Name>Application.services</Name>
@@ -486,9 +490,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>51356</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/Application.Frontal</IISUrl>
-          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
-          <IISAppRootUrl>http://localhost/Application.Frontal</IISAppRootUrl>
+          <IISUrl>http://localhost:51356/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

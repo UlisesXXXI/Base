@@ -8,7 +8,7 @@ using Application.Infraestructura.EntityFramework;
 
 namespace Application.Dal.Implementacion
 {
-    public abstract class RepositorioGenerico<T> : IRepositorioGenerico<T> where T:class
+    public  class RepositorioGenerico<T> : IRepositorioGenerico<T> where T:class
     {
         private DbContext _ctx;
 
