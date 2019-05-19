@@ -248,3 +248,5 @@ D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\Application.Infraestru
 D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\Application.Bll.dll.config
 D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\EntityFramework.DynamicFilters.xml
 D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\Application.Infraestructura.pdb
+D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\log4net.dll
+D:\PROYECTOS\ASP\Base\Application.Frontal.Tests\bin\Debug\log4net.xml

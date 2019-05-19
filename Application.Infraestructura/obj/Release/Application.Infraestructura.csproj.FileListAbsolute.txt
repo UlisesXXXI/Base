@@ -1,0 +1,9 @@
+D:\PROYECTOS\ASP\Base\Application.Infraestructura\bin\Release\Application.Infraestructura.dll
+D:\PROYECTOS\ASP\Base\Application.Infraestructura\bin\Release\Application.Infraestructura.pdb
+D:\PROYECTOS\ASP\Base\Application.Infraestructura\bin\Release\EntityFramework.dll
+D:\PROYECTOS\ASP\Base\Application.Infraestructura\bin\Release\EntityFramework.xml
+D:\PROYECTOS\ASP\Base\Application.Infraestructura\obj\Release\Application.Infraestructura.csprojAssemblyReference.cache
+D:\PROYECTOS\ASP\Base\Application.Infraestructura\obj\Release\Application.Infraestructura.csproj.CoreCompileInputs.cache
+D:\PROYECTOS\ASP\Base\Application.Infraestructura\obj\Release\Application.Infraestructura.csproj.CopyComplete
+D:\PROYECTOS\ASP\Base\Application.Infraestructura\obj\Release\Application.Infraestructura.dll
+D:\PROYECTOS\ASP\Base\Application.Infraestructura\obj\Release\Application.Infraestructura.pdb

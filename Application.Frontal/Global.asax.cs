@@ -18,6 +18,9 @@ namespace Application.Frontal
 {
     public class MvcApplication : System.Web.HttpApplication
     {
+        //Captura de eventos
+
+        //arranque aplicacion
         protected  void Application_Start()
         {
 
@@ -36,6 +39,7 @@ namespace Application.Frontal
             AutoMapperConfig.Configure();
         }
 
+        //captura eventos aplicacion
         protected void Application_Error()
         {
             var ex = Server.GetLastError();

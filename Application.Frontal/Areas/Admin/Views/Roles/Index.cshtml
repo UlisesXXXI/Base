@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Application.bbdd.Entities.ApplicationRole>
+
+<p>
+    @Html.ActionLink("Nuevo", "Create")
+</p>
+<table class="table" id="tablaRole" data-ajax="@Url.Action("ListaDeRoles","Roles")" style="color:black">
+    <thead>
+
+
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Active)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody></tbody>
+
+    <tfoot>
+
+
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Active)
+            </th>
+            <th></th>
+        </tr>
+    </tfoot>
+
+
+</table>
+
+@section Scripts{
+
+    <script src="~/Scripts/App/App.role.js"></script>
+
+
+    }

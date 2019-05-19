@@ -19,9 +19,11 @@ App.tipogasto = {
                 {
                     sortable: false,
                     "render": function (data, type, full, meta) {
+
+                        var urlNuevo = App.CreateUrl('/NuevoTipo/');
                         var buttonID = full.tipogasto;
                         return "<a class= 'btn btn-danger glyphicon glyphicon-remove' role='button' onclick='App.tipogasto.eliminarTipo(" + full.TipoGastoID + ")'></a>" +
-                            "<a class= 'btn btn-success glyphicon glyphicon-edit' role='button' onclick='App.tipogasto.nuevoTipo('"+url + "',"+ full.TipoGastoID + ")'></a>";
+                            "<a class= 'btn btn-success glyphicon glyphicon-edit' role='button' onclick='App.tipogasto.nuevoTipo(\""+urlNuevo + "\","+ full.TipoGastoID + ")'></a>";
                                 
 
 
@@ -58,10 +60,20 @@ App.tipogasto = {
 
                 var mdl = $("#modaltipogasto");
                 mdl.on('hidden.bs.modal', App.tipogasto.eliminarModal);
-                
-                mdl.modal({ "show": 'true' })
-                
-    
+
+                mdl.modal({ "show": 'true' });
+
+                $(document).ready(function () { 
+
+                    $("form input").keypress(function (e) {
+
+                        if (e.keyCode == 13) {
+                            e.preventDefault();
+                            return false;
+                        }
+
+                    });
+                }  );
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
                 alert("Status: " + textStatus); alert("Error: " + errorThrown);

@@ -79,3 +79,4 @@ C:\Desarrollos\Base\Application.bbdd\obj\Debug\Application.bbdd.Migrations.Entid
 D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.Migrations.quitarborradoencascada.resources
 D:\PROYECTOS\ASP\Base\Application.bbdd\bin\Debug\EntityFramework.DynamicFilters.dll
 D:\PROYECTOS\ASP\Base\Application.bbdd\bin\Debug\EntityFramework.DynamicFilters.xml
+D:\PROYECTOS\ASP\Base\Application.bbdd\obj\Debug\Application.bbdd.csprojAssemblyReference.cache
