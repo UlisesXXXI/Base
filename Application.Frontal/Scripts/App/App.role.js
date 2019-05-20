@@ -44,7 +44,7 @@
     nuevoRole: function (url, id) {
         if (id == undefined) id = 0;
         var containerPopUp = document.createElement("div");
-        containerPopUp.id = "container-tipogasto-popup";
+        containerPopUp.id = "container-Role-popup";
         var bdy = document.getElementsByTagName("body");
         console.log(bdy);
         bdy[0].appendChild(containerPopUp);
@@ -56,7 +56,7 @@
             success: function (response) {
                 containerPopUp.innerHTML = response;
 
-                var mdl = $("#modaltipogasto");
+                var mdl = $("#modalRole");
                 mdl.on('hidden.bs.modal', App.tipogasto.eliminarModal);
 
                 mdl.modal({ "show": 'true' });
@@ -120,7 +120,7 @@
 
     },
     eliminarModal: function () {
-        $("#modaltipogasto").remove();
+        $("#modalRole").remove();
     },
     GuardarCambios: function (nuevo) {
 
@@ -136,7 +136,7 @@
                 var mdl = $("#modalRoles");
                 mdl.modal("hide");
                 App.tipogasto.eliminarModal();
-                App.tipogasto.ActualizarTabla("tablaRoles");
+                App.tipogasto.ActualizarTabla("tablaRole");
 
 
             },
