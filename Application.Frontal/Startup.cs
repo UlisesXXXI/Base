@@ -1,4 +1,5 @@
-﻿using Microsoft.Owin;
+﻿using Application.Frontal.App_Start;
+using Microsoft.Owin;
 using Owin;
 
 [assembly: OwinStartupAttribute(typeof(Application.Frontal.Startup))]
@@ -9,6 +10,7 @@ namespace Application.Frontal
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
+            
         }
     }
 }

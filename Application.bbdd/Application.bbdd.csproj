@@ -107,6 +107,10 @@
     <Compile Include="Migrations\201905110845427_quitar borrado en cascada.Designer.cs">
       <DependentUpon>201905110845427_quitar borrado en cascada.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905201809257_rol.cs" />
+    <Compile Include="Migrations\201905201809257_rol.Designer.cs">
+      <DependentUpon>201905201809257_rol.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -129,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905110845427_quitar borrado en cascada.resx">
       <DependentUpon>201905110845427_quitar borrado en cascada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905201809257_rol.resx">
+      <DependentUpon>201905201809257_rol.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

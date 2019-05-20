@@ -27,7 +27,7 @@ namespace Application.Frontal
             AreaRegistration.RegisterAllAreas();
 
             XmlConfigurator.Configure();
-            DatosInicialesConfiguracion.Load();
+            
 
             
             UnityConfig.RegisterComponents();
@@ -37,6 +37,7 @@ namespace Application.Frontal
             
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AutoMapperConfig.Configure();
+            DatosInicialesConfiguracion.Load();
         }
 
         //captura eventos aplicacion

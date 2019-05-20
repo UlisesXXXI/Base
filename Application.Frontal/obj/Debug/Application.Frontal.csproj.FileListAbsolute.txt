@@ -473,3 +473,10 @@ D:\PROYECTOS\ASP\Base\Application.Frontal\bin\Application.Bll.dll.config
 D:\PROYECTOS\ASP\Base\Application.Frontal\bin\EntityFramework.DynamicFilters.xml
 D:\PROYECTOS\ASP\Base\Application.Frontal\bin\log4net.dll
 D:\PROYECTOS\ASP\Base\Application.Frontal\bin\log4net.xml
+C:\Desarrollos\Base\Application.Frontal\bin\Application.Infraestructura.dll
+C:\Desarrollos\Base\Application.Frontal\bin\log4net.dll
+C:\Desarrollos\Base\Application.Frontal\bin\EntityFramework.DynamicFilters.dll
+C:\Desarrollos\Base\Application.Frontal\bin\Application.Bll.dll.config
+C:\Desarrollos\Base\Application.Frontal\bin\Application.Infraestructura.pdb
+C:\Desarrollos\Base\Application.Frontal\bin\log4net.xml
+C:\Desarrollos\Base\Application.Frontal\bin\EntityFramework.DynamicFilters.xml

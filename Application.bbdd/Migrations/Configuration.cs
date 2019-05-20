@@ -1,6 +1,7 @@
 namespace Application.bbdd.Migrations
 {
     using Application.bbdd.Entities;
+    using Microsoft.AspNet.Identity;
     using Microsoft.AspNet.Identity.EntityFramework;
     using System;
     using System.Data.Entity;
@@ -16,10 +17,10 @@ namespace Application.bbdd.Migrations
 
         protected override void Seed(Application.bbdd.ApplicationDbContext context)
         {
-            if(!context.Roles.Any(r=>r.Name =="Admin"))
-            {
-              //  var store = new RoleStore<ApplicationRole>(context);
-            }
+            
+
+
+            base.Seed(context);
         }
     }
 }
