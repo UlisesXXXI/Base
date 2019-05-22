@@ -92,7 +92,7 @@
 
 
                 $.ajax({
-                    url: App.getBaseUrl() + "/role/Eliminar",
+                    url: App.getBaseUrl() + "/roles/Eliminar",
                     type: "POST",
                     data: { "id": param.id },
                     success: function (response) {
@@ -103,7 +103,7 @@
                         App.tipogasto.ActualizarTabla("tablaRole");
                     },
                     error: function (XMLHttpRequest, textStatus, errorThrown) {
-                        App.Aviso.Open({ msg: "No se pudo eliminar, No existe o hay entidades relacionadas", title: "Error: " + errorThrown });
+                        alert( XMLHttpRequest.responseText);
 
                     }
 

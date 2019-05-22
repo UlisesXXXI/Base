@@ -16,7 +16,7 @@
     <AssemblyName>Application.Frontal</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -305,6 +305,7 @@
     <Content Include="Scripts\App\App.gasto.js" />
     <Content Include="Areas\Admin\Views\Roles\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_rolesModal.cshtml" />
+    <Content Include="Areas\Admin\Views\Roles\Details.cshtml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\Buttons-1.5.6\css\buttons.bootstrap.css" />
@@ -495,7 +496,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>51356</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:51356/</IISUrl>
+          <IISUrl>http://localhost/Application.Frontal</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

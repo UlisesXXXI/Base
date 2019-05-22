@@ -105,6 +105,43 @@ namespace Application.Frontal
         {
             return new ApplicationRoleManager(new RoleStore<ApplicationRole>(context.Get<ApplicationDbContext>()));
         }
+
+        public ApplicationRole ObtenerRole(string Id)
+        {
+            ApplicationRole role = null;
+            if (string.IsNullOrEmpty(Id))
+            {
+                role = this.FindById(Id);
+            }
+
+            if(role==null || String.IsNullOrEmpty(role.Id))
+            {
+                role = new ApplicationRole();
+            }
+
+            return role;
+        }
+
+        public ApplicationRole InsertarOActualizar(ApplicationRole role)
+        {
+            IdentityResult resultado;
+            if (role == null || String.IsNullOrEmpty(role.Id))
+            {
+                resultado = this.Create(role);
+            }
+            else
+            {
+                resultado = this.Update(role);
+            }
+
+            if (!resultado.Succeeded)
+            {
+                throw new Exception("No se pudo realizar la operación");
+            }
+
+            return role;
+            
+        }
     }
 
     

@@ -85,3 +85,5 @@ C:\Desarrollos\Base\Application.bbdd\bin\Debug\EntityFramework.DynamicFilters.xm
 C:\Desarrollos\Base\Application.bbdd\obj\Debug\Application.bbdd.csprojAssemblyReference.cache
 C:\Desarrollos\Base\Application.bbdd\obj\Debug\Application.bbdd.Migrations.quitarborradoencascada.resources
 C:\Desarrollos\Base\Application.bbdd\obj\Debug\Application.bbdd.Migrations.rol.resources
+C:\Desarrollos\Base\Application.bbdd\bin\Debug\es\EntityFramework.resources.dll
+C:\Desarrollos\Base\Application.bbdd\bin\Debug\es\EntityFramework.SqlServer.resources.dll

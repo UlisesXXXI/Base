@@ -54,6 +54,8 @@ namespace Application.Frontal.Areas.Admin.Controllers
             }
         }
 
+        
+
         public UsersController(IUsuarioService userService,IRoleService roleService)
         {
             _usuarioService = userService;

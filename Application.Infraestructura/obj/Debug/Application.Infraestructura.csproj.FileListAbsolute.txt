@@ -16,3 +16,8 @@ C:\Desarrollos\Base\Application.Infraestructura\obj\Debug\Application.Infraestru
 C:\Desarrollos\Base\Application.Infraestructura\obj\Debug\Application.Infraestructura.csproj.CopyComplete
 C:\Desarrollos\Base\Application.Infraestructura\obj\Debug\Application.Infraestructura.dll
 C:\Desarrollos\Base\Application.Infraestructura\obj\Debug\Application.Infraestructura.pdb
+C:\Desarrollos\Base\Application.Infraestructura\bin\Debug\Application.Infraestructura.dll.config
+C:\Desarrollos\Base\Application.Infraestructura\bin\Debug\EntityFramework.SqlServer.dll
+C:\Desarrollos\Base\Application.Infraestructura\bin\Debug\EntityFramework.SqlServer.xml
+C:\Desarrollos\Base\Application.Infraestructura\bin\Debug\es\EntityFramework.resources.dll
+C:\Desarrollos\Base\Application.Infraestructura\bin\Debug\es\EntityFramework.SqlServer.resources.dll

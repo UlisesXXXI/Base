@@ -58,3 +58,4 @@ C:\Desarrollos\Base\Application.Dal\bin\Debug\Application.Infraestructura.dll
 C:\Desarrollos\Base\Application.Dal\bin\Debug\EntityFramework.DynamicFilters.dll
 C:\Desarrollos\Base\Application.Dal\bin\Debug\Application.Infraestructura.pdb
 C:\Desarrollos\Base\Application.Dal\bin\Debug\EntityFramework.DynamicFilters.xml
+C:\Desarrollos\Base\Application.Dal\bin\Debug\Application.Infraestructura.dll.config

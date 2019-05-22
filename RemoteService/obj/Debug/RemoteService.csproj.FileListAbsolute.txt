@@ -5,3 +5,10 @@ D:\PROYECTOS\ASP\Base\RemoteService\obj\Debug\RemoteService.csproj.CoreCompileIn
 D:\PROYECTOS\ASP\Base\RemoteService\obj\Debug\RemoteService.dll
 D:\PROYECTOS\ASP\Base\RemoteService\obj\Debug\RemoteService.pdb
 D:\PROYECTOS\ASP\Base\RemoteService\obj\Debug\RemoteService.csprojAssemblyReference.cache
+C:\Desarrollos\Base\RemoteService\bin\Debug\RemoteService.dll.config
+C:\Desarrollos\Base\RemoteService\bin\Debug\RemoteService.dll
+C:\Desarrollos\Base\RemoteService\bin\Debug\RemoteService.pdb
+C:\Desarrollos\Base\RemoteService\obj\Debug\RemoteService.csprojAssemblyReference.cache
+C:\Desarrollos\Base\RemoteService\obj\Debug\RemoteService.csproj.CoreCompileInputs.cache
+C:\Desarrollos\Base\RemoteService\obj\Debug\RemoteService.dll
+C:\Desarrollos\Base\RemoteService\obj\Debug\RemoteService.pdb

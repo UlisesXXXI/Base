@@ -60,3 +60,6 @@ C:\Desarrollos\Base\Application.Bll\bin\Debug\Application.Infraestructura.dll
 C:\Desarrollos\Base\Application.Bll\bin\Debug\EntityFramework.DynamicFilters.xml
 C:\Desarrollos\Base\Application.Bll\bin\Debug\EntityFramework.SqlServer.xml
 C:\Desarrollos\Base\Application.Bll\bin\Debug\Application.Infraestructura.pdb
+C:\Desarrollos\Base\Application.Bll\bin\Debug\Application.Infraestructura.dll.config
+C:\Desarrollos\Base\Application.Bll\bin\Debug\es\EntityFramework.resources.dll
+C:\Desarrollos\Base\Application.Bll\bin\Debug\es\EntityFramework.SqlServer.resources.dll
